@@ -4,6 +4,9 @@ Psy-Insight: Mental Health Oriented Interpretable Multi-turn Bilingual Counselin
 While updating the anonymized repository, we encountered a problem; we attempted to integrate a dynamic chat interface into the static website.
 
 ### Chinese Examples
+```json
+
+```
 ### English Examples
 ```json
 {
