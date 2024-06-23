@@ -152,7 +152,6 @@ we attempted to integrate a dynamic chat interface into the static website.While
 ```
 ### Translation of the Chinese Example
 ```json
-Certainly, here is the translation of the provided text into plain English:
 
 {
     "theme": "",
