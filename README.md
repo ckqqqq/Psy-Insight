@@ -1,7 +1,7 @@
 # Psy-Insight
 Psy-Insight: Mental Health Oriented Interpretable Multi-turn Bilingual Counseling Dataset for Large Language Model Finetuning
 ## Examples
-we attempted to integrate a dynamic chat interface into the static website.While updating the anonymized repository, we encountered a problem.
+
 
 ### Chinese Example
 ```json
@@ -391,5 +391,8 @@ we attempted to integrate a dynamic chat interface into the static website.While
         "post_reasoning": "The therapist reassures the student about involving child protective services and emphasizes the importance of ensuring her safety and maintaining family relationships. The therapist encourages the student to participate in the process of seeking help and support."
 }
 ```
+
+### Todo
+We wanted to add a chat feature that works in real time to our simple website, but when we tried to update the private place where we keep our code, we ran into problems because of some rules it has. We plan to fix this by June 25th.
 
 
