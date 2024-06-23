@@ -16,11 +16,12 @@ we attempted to integrate a dynamic chat interface into the static website.While
         "topic_dialog": {
             "key": "fewshot",
             "unit_id": 163,
-            "method": "Unknown",
+            "method": "Cognitive Behavioral Therapy",
             "dialog": [
                 {
                     "text": "我一开始就不该找她合租，但是没办法，我需要个人来分担费用。她年纪比我小很多，而且生活理念也不同。该她分担的家务，她从来都不在乎自己是不是已经完成，也不在乎公寓里乱成什么样。我可不能那样过日子，于是我就跟她说了，结果她还不高兴了。我想她早就在另找房子了吧，现在一定是已经找到了。",
                     "participant": "来访者",
+                    "observation": "因室友不分担家务且公寓凌乱而不满，表达了愤怒和无奈。",
                     "id": "163-0",
                     "emotional label": [
                         "Anger"
@@ -38,6 +39,7 @@ we attempted to integrate a dynamic chat interface into the static website.While
                 {
                     "text": "在我做论文的研究部门里有个女人，我想她会有兴趣跟我合租。她现在承租的公寓正在卖，无论如何，她过几月也得搬家。",
                     "participant": "来访者",
+                    "observation": "希望寻找寻找新合租者",
                     "id": "164-1",
                     "emotional label": [
                         "Neutral"
@@ -55,6 +57,7 @@ we attempted to integrate a dynamic chat interface into the static website.While
                 {
                     "text": "我们两个年纪接近，似乎在很多事上的观点也都一致。我们在这个部门相处蛮久了，我想应该不错。",
                     "participant": "来访者",
+                    "observation": "对新合租者的期望和信心",
                     "id": "164-3",
                     "emotional label": [
                         "Neutral"
@@ -72,6 +75,7 @@ we attempted to integrate a dynamic chat interface into the static website.While
                 {
                     "text": "我在参与一个针对领养父母的研究。领养安置之后我做跟进随访，最初，我们对领养父母的亲职能力做过一个评定，现在我要去了解其预估的准确度。",
                     "participant": "来访者",
+                    "observation": "解释了其研究工作",
                     "id": "164-5",
                     "emotional label": [
                         "Neutral"
@@ -89,6 +93,7 @@ we attempted to integrate a dynamic chat interface into the static website.While
                 {
                     "text": "我打算继续读书，以后拿博士学位，不过现在，我正在完成硕士论文。如果我的导师喜欢我做的研究，那么今年夏天我就能拿到硕士学位了。所以我要好好准备跟他的这次约谈。对了，要是下周我暂停一次和你见面，你会介意么？我要准备见他，时间不够用。",
                     "participant": "来访者",
+                    "observation": "感到学业压力和焦虑",
                     "id": "164-7",
                     "emotional label": [
                         "Anxiety"
@@ -106,6 +111,7 @@ we attempted to integrate a dynamic chat interface into the static website.While
                 {
                     "text": "你的意思是，如果我感到太过担心或者烦恼的话，那么，在我和导师见面之前来这里谈谈，会比之后再来要好，是这样么？",
                     "participant": "来访者",
+                    "observation": "因见导师前焦虑，询问是否提前见面较好",
                     "id": "164-9",
                     "emotional label": [
                         "Anxiety"
@@ -123,6 +129,7 @@ we attempted to integrate a dynamic chat interface into the static website.While
                 {
                     "text": "我想，下周我还是来吧。对于今天我告诉你的事，你有什么想法么？我想我该道歉，我今天说的尽是些鸡毛蒜皮，都是让人提不起兴趣的事，我的意思是，这些都不是心理层面上的问题。",
                     "participant": "来访者",
+                    "observation": "表达歉意，认为自己谈的问题无趣",
                     "id": "164-11",
                     "emotional label": [
                         "Others"
