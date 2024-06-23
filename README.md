@@ -30,7 +30,7 @@ we attempted to integrate a dynamic chat interface into the static website.While
                 {
                     "text": "那现在你打算怎么办呢？",
                     "participant": "治疗师",
-                    "reasoning":"通过提问引导来访者深入思考问题",
+                    "reasoning":"引导来访者深入思考问题",
                     "id": "164-0",
                     "strategy": [
                         "Question"
