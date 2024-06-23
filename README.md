@@ -3,7 +3,7 @@ Psy-Insight: Mental Health Oriented Interpretable Multi-turn Bilingual Counselin
 ## Examples
 we attempted to integrate a dynamic chat interface into the static website.While updating the anonymized repository, we encountered a problem.
 
-### Chinese Examples
+### Chinese Example
 ```json
     {
         "theme": "",
@@ -150,7 +150,156 @@ we attempted to integrate a dynamic chat interface into the static website.While
         "extra_tags": [],
     }
 ```
-### English Examples
+### Translation of the Chinese Example
+```json
+Certainly, here is the translation of the provided text into plain English:
+
+{
+    "theme": "",
+    "chat_stage": "6th Session",
+    "is_same_qa": 0,
+    "is_same_case": 1,
+    "background": "The visitor is a female master's student dealing with a co-living issue. She is highly concerned about the cleanliness of her living environment and the sharing of responsibilities. She needs to find a roommate who shares her lifestyle to reduce conflicts and stress over household chores.",
+    "guide": "The therapist helps the visitor cope with the problem through questioning, understanding, and encouragement.",
+    "pre_reasoning": "The therapist's strategies include guiding the visitor to think deeply about the problem through questions like 'What do you plan to do now?'; boosting the visitor's confidence through affirmation and encouragement, such as 'It's encouraging to see you handle stressful situations'; easing the visitor's anxiety through understanding and acceptance, like 'I don't find it boring at all'; and guiding the visitor to solve problems, such as 'If I feel too worried or troubled, then coming here to talk before meeting my advisor would be better than coming after, right?'",
+    "topic_dialog": {
+        "key": "fewshot",
+        "unit_id": 163,
+        "method": "Cognitive Behavioral Therapy",
+        "dialog": [
+            {
+                "text": "I shouldn't have started living with her, but I needed someone to share the costs. She's much younger than me and has a different lifestyle. She never cares whether she's done her share of chores or how messy the apartment is. I can't live like that, so I told her, and she got upset. I think she's already looking for another place, probably found one by now.",
+                "participant": "Visitor",
+                "observation": "Unhappy with roommate not sharing chores and messy apartment, expressing anger and helplessness.",
+                "id": "163-0",
+                "emotional label": [
+                    "Anger"
+                ]
+            },
+            {
+                "text": "What do you plan to do now?",
+                "participant": "Therapist",
+                "reasoning": "Guiding the visitor to think deeply about the problem",
+                "id": "164-0",
+                "strategy": [
+                    "Question"
+                ]
+            },
+            {
+                "text": "There's a woman in my research department who might be interested in co-living. Her current apartment is being sold, and she'll have to move in a few months anyway.",
+                "participant": "Visitor",
+                "observation": "Hoping to find a new roommate",
+                "id": "164-1",
+                "emotional label": [
+                    "Neutral"
+                ]
+            },
+            {
+                "text": "How do you know you two will get along?",
+                "participant": "Therapist",
+                "reasoning": "Exploring potential issues",
+                "id": "164-2",
+                "strategy": [
+                    "Question"
+                ]
+            },
+            {
+                "text": "We're close in age and seem to agree on many things. We've been working together in this department for a while, so I think it should be fine.",
+                "participant": "Visitor",
+                "observation": "Expectations and confidence in a new roommate",
+                "id": "164-3",
+                "emotional label": [
+                    "Neutral"
+                ]
+            },
+            {
+                "text": "What is your role in this department?",
+                "participant": "Therapist",
+                "reasoning": "Understanding background",
+                "id": "164-4",
+                "strategy": [
+                    "Question"
+                ]
+            },
+            {
+                "text": "I'm involved in a study on adoptive parents. I do follow-up visits after placements, and initially, we assessed the parenting abilities of the adoptive parents. Now, I'm looking into the accuracy of those assessments.",
+                "participant": "Visitor",
+                "observation": "Explaining her research work",
+                "id": "164-5",
+                "emotional label": [
+                    "Neutral"
+                ]
+            },
+            {
+                "text": "Is this part of your doctoral studies?",
+                "participant": "Therapist",
+                "reasoning": "",
+                "id": "164-6",
+                "strategy": [
+                    "Question"
+                ]
+            },
+            {
+                "text": "I plan to continue my studies and get a doctorate, but for now, I'm finishing my master's thesis. If my advisor likes my research, I can get my master's degree this summer. So I need to prepare well for our meeting. By the way, would it be okay if I skip our session next week? I'm running out of time to prepare.",
+                "participant": "Visitor",
+                "observation": "Feeling academic pressure and anxiety",
+                "id": "164-7",
+                "emotional label": [
+                    "Anxiety"
+                ]
+            },
+            {
+                "text": "The sessions are yours, and you can cancel if you need to, but I doubt canceling would be good for you.",
+                "participant": "Therapist",
+                "reasoning": "Offering advice and guiding the visitor to solve problems",
+                "id": "164-8",
+                "strategy": [
+                    "Affirmation and Reassurance"
+                ]
+            },
+            {
+                "text": "You mean if I feel too worried or troubled, then coming here to talk before meeting my advisor would be better than coming after, right?",
+                "participant": "Visitor",
+                "observation": "Anxious before meeting advisor, asking if it's better to come earlier",
+                "id": "164-9",
+                "emotional label": [
+                    "Anxiety"
+                ]
+            },
+            {
+                "text": "Exactly.",
+                "reasoning": "",
+                "participant": "Therapist",
+                "id": "164-10",
+                "strategy": [
+                    "Others"
+                ]
+            },
+            {
+                "text": "I think I'll come next week after all. Do you have any thoughts on what I've told you today? I feel like I should apologize; I've been talking about trivial things, nothing interesting or psychological.",
+                "participant": "Visitor",
+                "observation": "Expressing apology, feeling what she discussed is uninteresting",
+                "id": "164-11",
+                "emotional label": [
+                    "Others"
+                ]
+            },
+            {
+                "text": "I don't find it boring at all. It's encouraging to see you handle stressful situations, and understanding this is important for me.",
+                "participant": "Therapist",
+                "reasoning": "Boosting the visitor's confidence and easing her anxiety through understanding and acceptance",
+                "id": "164-12",
+                "strategy": [
+                    "Affirmation and Reassurance"
+                ]
+            }
+        ]
+    },
+    "post_reasoning": "In this session, the therapist used various strategies to address the visitor's emotions and behaviors. The therapist clarified the visitor's anxiety and pointed out her capabilities and potential for growth, encouraging her active participation in therapy. The therapist also observed the visitor's confusion about self-awareness and interpersonal relationships, understanding her needs and providing affirmation and guidance. Additionally, the therapist avoided negative evaluations of the visitor and responded with curiosity and understanding to her challenges, making the visitor feel accepted and understood. The therapist's strategies included encouragement, affirmation, understanding, and guidance to help the visitor face her issues and grow. These strategies help build a positive therapeutic relationship, promoting the visitor's self-exploration and improvement.",
+    "extra_tags": []
+}
+```
+### English Example
 ```json
 {
         "theme": "solution-focused brief therapy: building trust in the therapeutic relationship through acceptance and support for students sharing their experiences.",
