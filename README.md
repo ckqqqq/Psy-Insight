@@ -29,6 +29,7 @@ we attempted to integrate a dynamic chat interface into the static website.While
                 {
                     "text": "那现在你打算怎么办呢？",
                     "participant": "治疗师",
+                    "reasoning":"通过提问引导来访者深入思考问题",
                     "id": "164-0",
                     "strategy": [
                         "Question"
@@ -45,6 +46,7 @@ we attempted to integrate a dynamic chat interface into the static website.While
                 {
                     "text": "那你怎么知道你们两个合得来呢？",
                     "participant": "治疗师",
+                    "reasoning":"探究潜在问题",
                     "id": "164-2",
                     "strategy": [
                         "Question"
@@ -61,6 +63,7 @@ we attempted to integrate a dynamic chat interface into the static website.While
                 {
                     "text": "你在这个部门的工作性质是什么？",
                     "participant": "治疗师",
+                    "reasoning": "了解背景",
                     "id": "164-4",
                     "strategy": [
                         "Question"
@@ -77,6 +80,7 @@ we attempted to integrate a dynamic chat interface into the static website.While
                 {
                     "text": "这是你攻读博士学位的一部分么？",
                     "participant": "治疗师",
+                    "reasoning":"",
                     "id": "164-6",
                     "strategy": [
                         "Question"
@@ -93,6 +97,7 @@ we attempted to integrate a dynamic chat interface into the static website.While
                 {
                     "text": "面询是属于你的，你当然可以取消预约，不过我怀疑取消预约对你不是太好。",
                     "participant": "治疗师",
+                    "reasoning":"提出建议，引导来访者解决问题",
                     "id": "164-8",
                     "strategy": [
                         "Affirmation and Reassurance"
@@ -108,6 +113,7 @@ we attempted to integrate a dynamic chat interface into the static website.While
                 },
                 {
                     "text": "正是。",
+                    "reasoning":"",
                     "participant": "治疗师",
                     "id": "164-10",
                     "strategy": [
@@ -125,6 +131,7 @@ we attempted to integrate a dynamic chat interface into the static website.While
                 {
                     "text": "我一点都没有觉得无趣啊。看到你有能力应对压力情境，真令人鼓舞，而且了解这些对我来说也是重要的。",
                     "participant": "治疗师",
+                    "reasoning":"肯定和鼓励来访者增强信心并理解和接纳缓解来访者的焦虑",
                     "id": "164-12",
                     "strategy": [
                         "Affirmation and Reassurance"
