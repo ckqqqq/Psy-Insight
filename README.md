@@ -168,7 +168,7 @@ we attempted to integrate a dynamic chat interface into the static website.While
         "dialog": [
             {
                 "text": "I shouldn't have started living with her, but I needed someone to share the costs. She's much younger than me and has a different lifestyle. She never cares whether she's done her share of chores or how messy the apartment is. I can't live like that, so I told her, and she got upset. I think she's already looking for another place, probably found one by now.",
-                "participant": "Visitor",
+                "participant": "Client",
                 "observation": "Unhappy with roommate not sharing chores and messy apartment, expressing anger and helplessness.",
                 "id": "163-0",
                 "emotional label": [
@@ -186,7 +186,7 @@ we attempted to integrate a dynamic chat interface into the static website.While
             },
             {
                 "text": "There's a woman in my research department who might be interested in co-living. Her current apartment is being sold, and she'll have to move in a few months anyway.",
-                "participant": "Visitor",
+                "participant": "Client",
                 "observation": "Hoping to find a new roommate",
                 "id": "164-1",
                 "emotional label": [
@@ -204,7 +204,7 @@ we attempted to integrate a dynamic chat interface into the static website.While
             },
             {
                 "text": "We're close in age and seem to agree on many things. We've been working together in this department for a while, so I think it should be fine.",
-                "participant": "Visitor",
+                "participant": "Client",
                 "observation": "Expectations and confidence in a new roommate",
                 "id": "164-3",
                 "emotional label": [
@@ -222,7 +222,7 @@ we attempted to integrate a dynamic chat interface into the static website.While
             },
             {
                 "text": "I'm involved in a study on adoptive parents. I do follow-up visits after placements, and initially, we assessed the parenting abilities of the adoptive parents. Now, I'm looking into the accuracy of those assessments.",
-                "participant": "Visitor",
+                "participant": "Client",
                 "observation": "Explaining her research work",
                 "id": "164-5",
                 "emotional label": [
@@ -240,7 +240,7 @@ we attempted to integrate a dynamic chat interface into the static website.While
             },
             {
                 "text": "I plan to continue my studies and get a doctorate, but for now, I'm finishing my master's thesis. If my advisor likes my research, I can get my master's degree this summer. So I need to prepare well for our meeting. By the way, would it be okay if I skip our session next week? I'm running out of time to prepare.",
-                "participant": "Visitor",
+                "participant": "Client",
                 "observation": "Feeling academic pressure and anxiety",
                 "id": "164-7",
                 "emotional label": [
@@ -258,7 +258,7 @@ we attempted to integrate a dynamic chat interface into the static website.While
             },
             {
                 "text": "You mean if I feel too worried or troubled, then coming here to talk before meeting my advisor would be better than coming after, right?",
-                "participant": "Visitor",
+                "participant": "Client",
                 "observation": "Anxious before meeting advisor, asking if it's better to come earlier",
                 "id": "164-9",
                 "emotional label": [
@@ -276,7 +276,7 @@ we attempted to integrate a dynamic chat interface into the static website.While
             },
             {
                 "text": "I think I'll come next week after all. Do you have any thoughts on what I've told you today? I feel like I should apologize; I've been talking about trivial things, nothing interesting or psychological.",
-                "participant": "Visitor",
+                "participant": "Client",
                 "observation": "Expressing apology, feeling what she discussed is uninteresting",
                 "id": "164-11",
                 "emotional label": [
