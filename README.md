@@ -1,8 +1,10 @@
 # Psy-Insight
 Psy-Insight: Mental Health Oriented Interpretable Multi-turn Bilingual Counseling Dataset for Large Language Model Finetuning
 ## Flow Chart
-<img src="./docs/pic/github_demo.png" width="50%">
-
+<div style="text-align:center;">
+    <img src="./docs/pic/github_demo.png" width="80%">
+    Flow Chart of Psy-Insight Construction
+</div>
 
 ### Chinese Example
 ```json
