@@ -394,6 +394,6 @@ Psy-Insight: Mental Health Oriented Interpretable Multi-turn Bilingual Counselin
 ```
 
 ### Todo
-We want to add a live chat window to our anonymous repository, but it does not support dynamic web pages. We plan to fix this issue by June 25th.
+We want to add a chat interface to our anonymous repository, but it does not support dynamic web pages. We plan to fix this issue by June 25th.
 
 
