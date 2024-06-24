@@ -1,7 +1,11 @@
 # Psy-Insight
 Psy-Insight: Mental Health Oriented Interpretable Multi-turn Bilingual Counseling Dataset for Large Language Model Finetuning
 ## Flow Chart
-![Flow Chart of Psy-Insight Construction](./docs/pic/github_demo.png)
+
+<figure>
+  <img src="./docs/pic/github_demo.png" width="100">
+  <figcaption>Flow Chart of Psy-Insight Construction.</figcaption>
+</figure>
 ## Examples
 
 
@@ -395,6 +399,6 @@ Psy-Insight: Mental Health Oriented Interpretable Multi-turn Bilingual Counselin
 ```
 
 ### Todo
-We wanted to add a chat feature that works in real time to our simple website, but when we tried to update the private place where we keep our code, we ran into problems because of some rules it has. We plan to fix this by June 25th.
+We want to add a live chat window to our anonymous repository, but it seems that the website "anonymous" does not support dynamic web pages. We plan to fix this issue by June 25th.
 
 
