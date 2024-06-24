@@ -3,8 +3,8 @@ Psy-Insight: Mental Health Oriented Interpretable Multi-turn Bilingual Counselin
 ## Flow Chart
 <div style="text-align:center;">
     <img src="./docs/pic/github_demo.png" width="80%">
-    Flow Chart of Psy-Insight Construction
 </div>
+ Flow Chart of Psy-Insight Construction
 
 ### Chinese Example
 ```json
