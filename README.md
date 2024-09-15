@@ -8,8 +8,109 @@ Psy-Insight is a bilingual, interpretable multi-task dataset for psychological c
 ## Construction Workflow
 ![Flow Chart of Psy-Insight Construction](./docs/pic/github_demo.png)
  Flow Chart of Psy-Insight Construction
-```
 ### English Data Example
+```json
+{
+        "theme": "solution-focused brief therapy: building trust in the therapeutic relationship through acceptance and support for students sharing their experiences.",
+        "psychotherapy": "Solution-Focused Brief Therapy",
+        "topic": "Child-Parent Relationship Issues",
+        "stage": "",
+        "guide": "",
+        "is_same_qa": 0,
+        "is_same_session": 0,
+        "background": "A student confides in the therapist about a disturbing experience with her uncle and her concerns about her mother's reaction.",
+        "reasoning": "The student's willingness to share her experience may indicate that the therapist's acceptance and support have built trust in the therapeutic relationship.",
+        "dialog": [
+            {
+                "speaker": "Seeker",
+                "participant": "Beth",
+                "content": "It’s my older uncle … He comes over a lot and stays with us, and sometimes my mom leaves us with him when she goes out. I liked him, but last semester he stayed over and he wanted to kiss me. I didn’t know what to do. My mom likes him a lot, and they are close. Now, he says he loves me, and he has put his hands on me, you know, my breasts. I just stood there and didn’t know what to do. I don’t want to let mom know; she would be mad at me.",
+                "id": "98-0",
+                "observation": "Beth discloses a distressing experience involving her uncle, expressing confusion and fear about the situation and concern about her mother's reaction, indicating a complex family dynamic and her reluctance to cause conflict.",
+                "emotional label": [
+                    "Fear",
+                    "Shame"
+                ]
+            },
+            {
+                "speaker": "Supporter",
+                "participant": "Therapist",
+                "content": "Thank you for taking the chance and trying to help your situation by sharing it with me. I understand how difficult it must have been for you keeping this secret and trying to protect your mom’s relationship with her brother. I admire your courage to take care of yourself given the very difficult situation you’ve been in. Do you have any ideas about how you would want to make this better and not have this happening?",
+                "id": "98-1",
+                "reasoning": "The therapist acknowledges Beth's bravery in sharing her experience and offers support while encouraging her to consider ways to improve her situation, empowering her to take control and explore solutions.",
+                "strategy": [
+                    "Question"
+                ]
+            },
+            {
+                "speaker": "Seeker",
+                "participant": "Beth",
+                "content": "I’m aware of child protective services. They see some of my friends and their families. I don’t want to have to leave my mom, and I don’t want her to be mad at me.",
+                "id": "98-2",
+                "observation": "Beth demonstrates awareness of potential support services but expresses concerns about the impact on her family dynamics, highlighting her internal conflict and the importance of maintaining her relationship with her mother.",
+                "emotional label": [
+                    "Fear",
+                    "Guilty"
+                ]
+            },
+            {
+                "speaker": "Supporter",
+                "participant": "Therapist",
+                "content": "I agree that you should be able to stay in your home and also to have a good relationship with your mom. You are aware of child protective services. It is their job to help protect you and any other young person. I agree with you that it is best when you stay at home and make it a safe place for you and your brothers and sisters and your mom, too. From what you have shared, it would be important to contact child protective services. I know several people there, and I would like for you to help me make this contact so that you can make your home safe. Will you help make that happen?",
+                "id": "98-3",
+                "reasoning": "The therapist validates Beth's desire to maintain her family relationships while emphasizing the importance of her safety, suggesting a collaborative approach to involve child protective services and ensure a safe environment for Beth and her family.",
+                "strategy": [
+                    "Question"
+                ]
+            },
+            {
+                "speaker": "Seeker",
+                "participant": "Beth",
+                "content": "I guess … But I’m still afraid of what mom might say and of her brother.",
+                "id": "98-4",
+                "observation": "Beth expresses fear of potential repercussions within her family, indicating the internal struggle she faces in balancing her safety with her relationships and the challenging decisions ahead.",
+                "emotional label": [
+                    "Anxiety",
+                    "Fear"
+                ]
+            },
+            {
+                "speaker": "Supporter",
+                "participant": "Therapist",
+                "content": "I understand your not wanting to upset your mom or even your uncle. It’s not an easy decision to make. What do you think would be the best way to handle this so that you don’t have to deal with your uncle’s behavior and you can feel safe?",
+                "id": "98-5",
+                "reasoning": "The therapist acknowledges Beth's concerns and explores her thoughts on managing the situation delicately, encouraging her to consider strategies that prioritize her safety and well-being while navigating the complexities of family dynamics.",
+                "strategy": [
+                    "Question"
+                ]
+            },
+            {
+                "speaker": "Seeker",
+                "participant": "Beth",
+                "content": "Do you think the service worker would help me tell my mother and help make things easier after she finds out?",
+                "id": "98-6",
+                "observation": "Beth's question reflects her uncertainty and concern about how to handle the situation with her mother, indicating a need for support and guidance.",
+                "emotional label": [
+                    "Fear"
+                ]
+            },
+            {
+                "speaker": "Supporter",
+                "participant": "Therapist",
+                "content": "I can only say that that is exactly the work they do with families in these situations. It’s important that you are safe and that your family can continue to be close. And it’s important that the worker understand what happened and then has your help in finding the best way to work with your mom. You can meet and talk with the worker here at school and help her understand the situation. Is that okay with you?",
+                "id": "98-7",
+                "reasoning": "The therapist acknowledges Beth's concerns and offers reassurance by explaining the role of the service worker and emphasizing the importance of safety and family relationships. By involving Beth in the process and seeking her consent, the therapist empowers her to take an active role in seeking help and support.",
+                "strategy": [
+                    "Question"
+                ]
+            }
+        ],
+        "summary": "The therapist reassures the student about involving child protective services and emphasizes the importance of ensuring her safety and maintaining family relationships. The therapist encourages the student to participate in the process of seeking help and support."
+    }
+```
+
+
+### Chinese Data Example
 ```json
    ```json
 {
@@ -173,107 +274,6 @@ Psy-Insight is a bilingual, interpretable multi-task dataset for psychological c
     ],
     "summary": "在“来访者因自己公寓里凌乱而不悦”，与“她的童年记忆，以及当时她母亲抑郁发作后家里的状况”之间，治疗师可能会去尝试建立联系。尽管这之间可能会存在着某种联系，但在本节面询中，尚无证据下这个结论，所以，此刻治疗师没有理由不就其字面意涵来理解来访者。治疗师没有将来访者的思考强行纳入所谓心理动力取向的诠释模式，而是把握这个机会，去了解来访者在面对压力时的反应，了解她调适日常生活的能力。\n在本次面询中，治疗师采取了多种策略来处理来访者的情绪和行为。首先，治疗师澄清了来访者的焦虑并指出其能力和潜在的成长空间，鼓励她积极参与治疗。治疗师还观察到来访者对自我认知和人际关系的困惑，理解她的需求并给予肯定和指导。此外，治疗师避免了对来访者的负面评价，而是以好奇心和理解回应她的挑战，让来访者感到被接纳和理解。治疗师的策略包括鼓励、肯定、理解和引导，以帮助来访者面对自身问题并获得成长。这些策略有助于建立积极的治疗关系，促进来访者的自我探索和改善。"
 }
-```
-
-### English Example
-```json
-{
-        "theme": "solution-focused brief therapy: building trust in the therapeutic relationship through acceptance and support for students sharing their experiences.",
-        "psychotherapy": "Solution-Focused Brief Therapy",
-        "topic": "Child-Parent Relationship Issues",
-        "stage": "",
-        "guide": "",
-        "is_same_qa": 0,
-        "is_same_session": 0,
-        "background": "A student confides in the therapist about a disturbing experience with her uncle and her concerns about her mother's reaction.",
-        "reasoning": "The student's willingness to share her experience may indicate that the therapist's acceptance and support have built trust in the therapeutic relationship.",
-        "dialog": [
-            {
-                "speaker": "Seeker",
-                "participant": "Beth",
-                "content": "It’s my older uncle … He comes over a lot and stays with us, and sometimes my mom leaves us with him when she goes out. I liked him, but last semester he stayed over and he wanted to kiss me. I didn’t know what to do. My mom likes him a lot, and they are close. Now, he says he loves me, and he has put his hands on me, you know, my breasts. I just stood there and didn’t know what to do. I don’t want to let mom know; she would be mad at me.",
-                "id": "98-0",
-                "observation": "Beth discloses a distressing experience involving her uncle, expressing confusion and fear about the situation and concern about her mother's reaction, indicating a complex family dynamic and her reluctance to cause conflict.",
-                "emotional label": [
-                    "Fear",
-                    "Shame"
-                ]
-            },
-            {
-                "speaker": "Supporter",
-                "participant": "Therapist",
-                "content": "Thank you for taking the chance and trying to help your situation by sharing it with me. I understand how difficult it must have been for you keeping this secret and trying to protect your mom’s relationship with her brother. I admire your courage to take care of yourself given the very difficult situation you’ve been in. Do you have any ideas about how you would want to make this better and not have this happening?",
-                "id": "98-1",
-                "reasoning": "The therapist acknowledges Beth's bravery in sharing her experience and offers support while encouraging her to consider ways to improve her situation, empowering her to take control and explore solutions.",
-                "strategy": [
-                    "Question"
-                ]
-            },
-            {
-                "speaker": "Seeker",
-                "participant": "Beth",
-                "content": "I’m aware of child protective services. They see some of my friends and their families. I don’t want to have to leave my mom, and I don’t want her to be mad at me.",
-                "id": "98-2",
-                "observation": "Beth demonstrates awareness of potential support services but expresses concerns about the impact on her family dynamics, highlighting her internal conflict and the importance of maintaining her relationship with her mother.",
-                "emotional label": [
-                    "Fear",
-                    "Guilty"
-                ]
-            },
-            {
-                "speaker": "Supporter",
-                "participant": "Therapist",
-                "content": "I agree that you should be able to stay in your home and also to have a good relationship with your mom. You are aware of child protective services. It is their job to help protect you and any other young person. I agree with you that it is best when you stay at home and make it a safe place for you and your brothers and sisters and your mom, too. From what you have shared, it would be important to contact child protective services. I know several people there, and I would like for you to help me make this contact so that you can make your home safe. Will you help make that happen?",
-                "id": "98-3",
-                "reasoning": "The therapist validates Beth's desire to maintain her family relationships while emphasizing the importance of her safety, suggesting a collaborative approach to involve child protective services and ensure a safe environment for Beth and her family.",
-                "strategy": [
-                    "Question"
-                ]
-            },
-            {
-                "speaker": "Seeker",
-                "participant": "Beth",
-                "content": "I guess … But I’m still afraid of what mom might say and of her brother.",
-                "id": "98-4",
-                "observation": "Beth expresses fear of potential repercussions within her family, indicating the internal struggle she faces in balancing her safety with her relationships and the challenging decisions ahead.",
-                "emotional label": [
-                    "Anxiety",
-                    "Fear"
-                ]
-            },
-            {
-                "speaker": "Supporter",
-                "participant": "Therapist",
-                "content": "I understand your not wanting to upset your mom or even your uncle. It’s not an easy decision to make. What do you think would be the best way to handle this so that you don’t have to deal with your uncle’s behavior and you can feel safe?",
-                "id": "98-5",
-                "reasoning": "The therapist acknowledges Beth's concerns and explores her thoughts on managing the situation delicately, encouraging her to consider strategies that prioritize her safety and well-being while navigating the complexities of family dynamics.",
-                "strategy": [
-                    "Question"
-                ]
-            },
-            {
-                "speaker": "Seeker",
-                "participant": "Beth",
-                "content": "Do you think the service worker would help me tell my mother and help make things easier after she finds out?",
-                "id": "98-6",
-                "observation": "Beth's question reflects her uncertainty and concern about how to handle the situation with her mother, indicating a need for support and guidance.",
-                "emotional label": [
-                    "Fear"
-                ]
-            },
-            {
-                "speaker": "Supporter",
-                "participant": "Therapist",
-                "content": "I can only say that that is exactly the work they do with families in these situations. It’s important that you are safe and that your family can continue to be close. And it’s important that the worker understand what happened and then has your help in finding the best way to work with your mom. You can meet and talk with the worker here at school and help her understand the situation. Is that okay with you?",
-                "id": "98-7",
-                "reasoning": "The therapist acknowledges Beth's concerns and offers reassurance by explaining the role of the service worker and emphasizing the importance of safety and family relationships. By involving Beth in the process and seeking her consent, the therapist empowers her to take an active role in seeking help and support.",
-                "strategy": [
-                    "Question"
-                ]
-            }
-        ],
-        "summary": "The therapist reassures the student about involving child protective services and emphasizes the importance of ensuring her safety and maintaining family relationships. The therapist encourages the student to participate in the process of seeking help and support."
-    }
 ```
 
 
