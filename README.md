@@ -1,5 +1,35 @@
-# Psy-Insight Website
+
+
+<h1 align="center">
+<img src="https://github.com/CriticBench/criticbench.github.io/raw/main/docs/static/images/criticbench_logo.png" width="80" alt="CriticBench" />
+<br>
+Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseling
+</h1>
+
+
+<div align="center">
+
+![](https://img.shields.io/badge/Code%20License-MIT-green)
+
+</div>
+
+<p align="center">
+  <a href="https://psy-insight.anonymous-demo.fun/"><b>[🌐 Website]</b></a> •
+  <a href="https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/"><b>[📜 Paper]</b></a> •
+  <a href="https://anonymous.4open.science/r/Psy-Insight-F65E"><b>[🤗 Dataset]</b></a> •
+  <a href="https://anonymous.4open.science/r/Psy-Insight-F65E"><b>[🐱 GitHub]</b></a>
+  <br>
+  <!-- <a href="https://twitter.com/TODO"><b>[🐦 Twitter]</b></a> • -->
+  <!-- <a href="#-quick-start">Quick Start</a> • -->
+  <!-- <a href="#%EF%B8%8F-citation">Citation</a> -->
+</p>
+
+<p align="center">
+Repo for "<a href="https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/" target="_blank">Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseling</a>"
+</p>
+
 [https://psy-Insight.anonymous-demo.fun/](https://psy-insight.anonymous-demo.fun/)
+
 
 [Backup Mirror Website](https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/)
 # Psy-Insight
