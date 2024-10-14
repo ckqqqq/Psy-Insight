@@ -1,5 +1,5 @@
 # Try Psy-Insight
-![https://psy-copilot.anonymous-demo.fun/](https://psy-copilot.anonymous-demo.fun/)
+[https://psy-copilot.anonymous-demo.fun/](https://psy-copilot.anonymous-demo.fun/)
 
 # Psy-Insight
 
