@@ -11,19 +11,17 @@ Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseli
 </div>
 <!-- https://anonymous.4open.science/r/Psy-Insight-F65E/docs/pic/ -->
 <p align="center">
-  <a href="https://psy-insight.anonymous-demo.fun/"><b>[🌐 Website]</b></a> •
-  <a href="https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/"><b>[🌐 Backup Website]</b></a> •
+  <a href="https://anonymous.4open.science/r/Psy-Insight-F65E"><b>[🌐 GitHub]</b></a> • 
+  <a href="https://psy-insight.anonymous-demo.fun/"><b>[🐦 Video / Figure ]</b></a> • 
+  <!-- <a href="https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/"><b>[🌐 Video]</b></a> • -->
   <a href="https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/static/pdfs/psy-insight.pdf"><b>[📜 Paper]</b></a> •
   <a href="https://anonymous.4open.science/r/Psy-Insight-F65E/data/README.md"><b>[🤗 Dataset]</b></a> •
-  <a href="https://anonymous.4open.science/r/Psy-Insight-F65E"><b>[🐱 GitHub]</b></a>
+  <a href="https://anonymous.4open.science/r/Psy-Insight-F65E"><b>[🐱 Website]</b></a>
   <br>
   <!-- <a href="https://twitter.com/TODO"><b>[🐦 Twitter]</b></a> • -->
   <!-- <a href="#-quick-start">Quick Start</a> • -->
   <!-- <a href="#%EF%B8%8F-citation">Citation</a> -->
 </p>
-
-
-
 
 <p align="center">
 Repo for "<a href="https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/" target="_blank">Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseling</a>"
@@ -40,145 +38,126 @@ Psy-Insight is a bilingual, interpretable multi-task dataset for psychological c
 ## Construction Workflow
 
 ![Flow Chart of Psy-Insight Construction](./docs/pic/github_demo.png)
- Flow Chart of Psy-Insight Construction
+Flow Chart of Psy-Insight Construction
 
 ## Data Example
 
- A counseling cycle for a client consists of several sessions. In each session, the counselor and the client engage in multiple turns of conversation around a specific theme or goal. We annotate these two dialogue granularities with short labels and COT annotations.
-
+A counseling cycle for a client consists of several sessions. In each session, the counselor and the client engage in multiple turns of conversation around a specific theme or goal. We annotate these two dialogue granularities with short labels and COT annotations.
 
 ### Session-level Annotations
 
-* | Label           | Type                     | Meaning                                                                                                                  | Example                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-  | --------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-  | dialog_id       | Short Label              | ID for this session                                                                                                     | 000001                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-  | theme           | COT annotation           | The brief summary of this                                                                                               | cognitive behaviour therapy: exploring cognition through images and thoughts in therapy to uncover emotionally charged thoughts and beliefs.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-  | psychotherapy   | short label              | The psychotherapy used by the counselor in this session                                                                  | Cognitive Behaviour Therapy / Solution-Focused Brief Therapy / Psychoanalytic Therapy                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-  | topic           | short label              | The topic label of this session                                                                                        | Appearance Anxiety / Partner Relationship / Job Crisis / Academic Pressure                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-  | stage           | short label             | The stage of counseling session in the overall treatment cycle                                                           | 1st Session (the first meeting between the patient and the therapist.) / 6th to 31st Session / Regular Session                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-  | guide           | COT annotation          | The brief step-by-step guide for therapists, covering the client's situation and the corresponding therapist's strategy | 治疗师通过多模式评估全面了解来访者的问题，制定个性化的治疗计划。在治疗中，她可通过行为测量、行为预演和角色演练等技术来处理问题，并逐步改变自我认知加强的信念。                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-  | is_same_qa      | short label              | Does the first respones in this session consistent with the final one from previous session?                             | 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-  | is_same_session | short label              | Is this session consistent with the previous one                                                                         | 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-  | background      | COT annotation          | background of client in this session                                                                                     | A client struggles with feelings of guilt and inadequacy related to not having a traditional job.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-  | reasoning       | COT annotation          | Step-by-step reasoning about the session from therapist                                                                 | The therapist's suggestions can stimulate productive introspection in the client, but an excess of suggestions may lead to client passivity. It is important for the therapist to assess the client's response to suggestions to ensure genuine progress in therapy. Additionally, suggesting opposite thoughts can help clients explore their automatic thoughts and underlying beliefs.                                                                                                                                                                                                                                                  |
-  | dialog          | counseling session unit | Dailog Unit                                                                                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-  | summary         | COT annotation          | Step-by-step summary about the sessions from therapist                                                                 | 来访者和我讨论了找到一个完全为她自己所用的时间对她而言有多么的困难。我特别强调这也是个好机会——她可以学着向别人索取自己的所需，并坚持到底直到得到满意的结果。这样她就同时完成了另外一个目标——向别人索取自己所需要的东西。学会说“不”来访者告诉我，她到目前为止一直在不停地为每个人付出，但是她却无法为自己要求些什么。我们已经对后面这个问题进行了处理，并且获得了一定的成功。来访者告诉我，当别人要求她参与到某个活动中时，她不知道该如何拒绝，尤其当别人说他们需要她的时候，她更不知道如何说“不”。她希望能谈论她的父亲，她认为是父亲让自已失去自主权的。我要求她回忆最近一次她觉得无法拒绝别人的情况，并将这个场景详细地描述出来。 |
+- | Label           | Type                    | Meaning                                                                                                                 | Example                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+  | --------------- | ----------------------- | ----------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+  | dialog_id       | Short Label             | ID for this session                                                                                                     | 000001                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+  | theme           | COT annotation          | The brief summary of this                                                                                               | cognitive behaviour therapy: exploring cognition through images and thoughts in therapy to uncover emotionally charged thoughts and beliefs.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+  | psychotherapy   | short label             | The psychotherapy used by the counselor in this session                                                                 | Cognitive Behaviour Therapy / Solution-Focused Brief Therapy / Psychoanalytic Therapy                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+  | topic           | short label             | The topic label of this session                                                                                         | Appearance Anxiety / Partner Relationship / Job Crisis / Academic Pressure                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+  | stage           | short label             | The stage of counseling session in the overall treatment cycle                                                          | 1st Session (the first meeting between the patient and the therapist.) / 6th to 31st Session / Regular Session                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+  | guide           | COT annotation          | The brief step-by-step guide for therapists, covering the client's situation and the corresponding therapist's strategy | 治疗师通过多模式评估全面了解来访者的问题，制定个性化的治疗计划。在治疗中，她可通过行为测量、行为预演和角色演练等技术来处理问题，并逐步改变自我认知加强的信念。                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+  | is_same_qa      | short label             | Does the first respones in this session consistent with the final one from previous session?                            | 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+  | is_same_session | short label             | Is this session consistent with the previous one                                                                        | 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+  | background      | COT annotation          | background of client in this session                                                                                    | A client struggles with feelings of guilt and inadequacy related to not having a traditional job.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+  | reasoning       | COT annotation          | Step-by-step reasoning about the session from therapist                                                                 | The therapist's suggestions can stimulate productive introspection in the client, but an excess of suggestions may lead to client passivity. It is important for the therapist to assess the client's response to suggestions to ensure genuine progress in therapy. Additionally, suggesting opposite thoughts can help clients explore their automatic thoughts and underlying beliefs.                                                                                                                                                                                                                                          |
+  | dialog          | counseling session unit | Dailog Unit                                                                                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+  | summary         | COT annotation          | Step-by-step summary about the sessions from therapist                                                                  | 来访者和我讨论了找到一个完全为她自己所用的时间对她而言有多么的困难。我特别强调这也是个好机会——她可以学着向别人索取自己的所需，并坚持到底直到得到满意的结果。这样她就同时完成了另外一个目标——向别人索取自己所需要的东西。学会说“不”来访者告诉我，她到目前为止一直在不停地为每个人付出，但是她却无法为自己要求些什么。我们已经对后面这个问题进行了处理，并且获得了一定的成功。来访者告诉我，当别人要求她参与到某个活动中时，她不知道该如何拒绝，尤其当别人说他们需要她的时候，她更不知道如何说“不”。她希望能谈论她的父亲，她认为是父亲让自已失去自主权的。我要求她回忆最近一次她觉得无法拒绝别人的情况，并将这个场景详细地描述出来。 |
 
   ### Turn-level Annotations in counseling session unit
-* | Label           | Type             | Meaning                                                    | Example                                                                                                                                                                                                              |
-  | --------------- | ---------------- | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-  | speaker         | short label     | Identity of speaker                                       | "seeker" or "supporter""                                                                                                                                                                                            |
-  | participant     | short label      | The term used for the speaker in counseling conversations. | "Therapist"/\"Carl"\"/"Beth"/"Dr. Ralph."/"Husband"/"Bob"                                                                                                                                                            |
-  | content         | dialog utterance | The content of counseling conversation                  | 我觉得你这个决定有一定道理，不过呢，就像在之前治疗里那样，每下一 款商品个结论，我们都要给个机会来验证它一下。你想要什么时候停止呢？/ How and on what basis was the decision made to end or interrupt the treatment? |
-  | strategy        | short label      | The strategy of therapist                               | Question / Information                                                                                                                                                                                              |
-  | emotional label | short label      | The emotion of client                                   | Anxiety / Neural / Happiness                                                                                                                                                                                         |
-  | reasoning       | COT annotation   | The step-by-step reasoning from therapist                  | The therapist is inquiring about the circumstances surrounding the termination of Miss Banks' therapy with Dr. Ralph to gain insight into her treatment progress and any unresolved issues.                          |
-  | observation     | COT annotation   | The summary of client utterance                            | Miss Banks expresses uncertainty and skepticism about continuing therapy, influenced by discussions with friends and her past doubts.                                                                                |
-* ## Example data unit of a session
+
+- | Label           | Type             | Meaning                                                    | Example                                                                                                                                                                                                             |
+  | --------------- | ---------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+  | speaker         | short label      | Identity of speaker                                        | "seeker" or "supporter""                                                                                                                                                                                            |
+  | participant     | short label      | The term used for the speaker in counseling conversations. | "Therapist"/\"Carl"\"/"Beth"/"Dr. Ralph."/"Husband"/"Bob"                                                                                                                                                           |
+  | content         | dialog utterance | The content of counseling conversation                     | 我觉得你这个决定有一定道理，不过呢，就像在之前治疗里那样，每下一 款商品个结论，我们都要给个机会来验证它一下。你想要什么时候停止呢？/ How and on what basis was the decision made to end or interrupt the treatment? |
+  | strategy        | short label      | The strategy of therapist                                  | Question / Information                                                                                                                                                                                              |
+  | emotional label | short label      | The emotion of client                                      | Anxiety / Neural / Happiness                                                                                                                                                                                        |
+  | reasoning       | COT annotation   | The step-by-step reasoning from therapist                  | The therapist is inquiring about the circumstances surrounding the termination of Miss Banks' therapy with Dr. Ralph to gain insight into her treatment progress and any unresolved issues.                         |
+  | observation     | COT annotation   | The summary of client utterance                            | Miss Banks expresses uncertainty and skepticism about continuing therapy, influenced by discussions with friends and her past doubts.                                                                               |
+- ## Example data unit of a session
 
 ```json
 {
-        "theme": "solution-focused brief therapy: building trust in the therapeutic relationship through acceptance and support for students sharing their experiences.",
-        "psychotherapy": "Solution-Focused Brief Therapy",
-        "topic": "Child-Parent Relationship Issues",
-        "stage": "",
-        "guide": "",
-        "is_same_qa": 0,
-        "is_same_session": 0,
-        "background": "A student confides in the therapist about a disturbing experience with her uncle and her concerns about her mother's reaction.",
-        "reasoning": "The student's willingness to share her experience may indicate that the therapist's acceptance and support have built trust in the therapeutic relationship.",
-        "dialog": [
-            {
-                "speaker": "Seeker",
-                "participant": "Beth",
-                "content": "It’s my older uncle … He comes over a lot and stays with us, and sometimes my mom leaves us with him when she goes out. I liked him, but last semester he stayed over and he wanted to kiss me. I didn’t know what to do. My mom likes him a lot, and they are close. Now, he says he loves me, and he has put his hands on me, you know, my breasts. I just stood there and didn’t know what to do. I don’t want to let mom know; she would be mad at me.",
-                "id": "98-0",
-                "observation": "Beth discloses a distressing experience involving her uncle, expressing confusion and fear about the situation and concern about her mother's reaction, indicating a complex family dynamic and her reluctance to cause conflict.",
-                "emotional label": [
-                    "Fear",
-                    "Shame"
-                ]
-            },
-            {
-                "speaker": "Supporter",
-                "participant": "Therapist",
-                "content": "Thank you for taking the chance and trying to help your situation by sharing it with me. I understand how difficult it must have been for you keeping this secret and trying to protect your mom’s relationship with her brother. I admire your courage to take care of yourself given the very difficult situation you’ve been in. Do you have any ideas about how you would want to make this better and not have this happening?",
-                "id": "98-1",
-                "reasoning": "The therapist acknowledges Beth's bravery in sharing her experience and offers support while encouraging her to consider ways to improve her situation, empowering her to take control and explore solutions.",
-                "strategy": [
-                    "Question"
-                ]
-            },
-            {
-                "speaker": "Seeker",
-                "participant": "Beth",
-                "content": "I’m aware of child protective services. They see some of my friends and their families. I don’t want to have to leave my mom, and I don’t want her to be mad at me.",
-                "id": "98-2",
-                "observation": "Beth demonstrates awareness of potential support services but expresses concerns about the impact on her family dynamics, highlighting her internal conflict and the importance of maintaining her relationship with her mother.",
-                "emotional label": [
-                    "Fear",
-                    "Guilty"
-                ]
-            },
-            {
-                "speaker": "Supporter",
-                "participant": "Therapist",
-                "content": "I agree that you should be able to stay in your home and also to have a good relationship with your mom. You are aware of child protective services. It is their job to help protect you and any other young person. I agree with you that it is best when you stay at home and make it a safe place for you and your brothers and sisters and your mom, too. From what you have shared, it would be important to contact child protective services. I know several people there, and I would like for you to help me make this contact so that you can make your home safe. Will you help make that happen?",
-                "id": "98-3",
-                "reasoning": "The therapist validates Beth's desire to maintain her family relationships while emphasizing the importance of her safety, suggesting a collaborative approach to involve child protective services and ensure a safe environment for Beth and her family.",
-                "strategy": [
-                    "Question"
-                ]
-            },
-            {
-                "speaker": "Seeker",
-                "participant": "Beth",
-                "content": "I guess … But I’m still afraid of what mom might say and of her brother.",
-                "id": "98-4",
-                "observation": "Beth expresses fear of potential repercussions within her family, indicating the internal struggle she faces in balancing her safety with her relationships and the challenging decisions ahead.",
-                "emotional label": [
-                    "Anxiety",
-                    "Fear"
-                ]
-            },
-            {
-                "speaker": "Supporter",
-                "participant": "Therapist",
-                "content": "I understand your not wanting to upset your mom or even your uncle. It’s not an easy decision to make. What do you think would be the best way to handle this so that you don’t have to deal with your uncle’s behavior and you can feel safe?",
-                "id": "98-5",
-                "reasoning": "The therapist acknowledges Beth's concerns and explores her thoughts on managing the situation delicately, encouraging her to consider strategies that prioritize her safety and well-being while navigating the complexities of family dynamics.",
-                "strategy": [
-                    "Question"
-                ]
-            },
-            {
-                "speaker": "Seeker",
-                "participant": "Beth",
-                "content": "Do you think the service worker would help me tell my mother and help make things easier after she finds out?",
-                "id": "98-6",
-                "observation": "Beth's question reflects her uncertainty and concern about how to handle the situation with her mother, indicating a need for support and guidance.",
-                "emotional label": [
-                    "Fear"
-                ]
-            },
-            {
-                "speaker": "Supporter",
-                "participant": "Therapist",
-                "content": "I can only say that that is exactly the work they do with families in these situations. It’s important that you are safe and that your family can continue to be close. And it’s important that the worker understand what happened and then has your help in finding the best way to work with your mom. You can meet and talk with the worker here at school and help her understand the situation. Is that okay with you?",
-                "id": "98-7",
-                "reasoning": "The therapist acknowledges Beth's concerns and offers reassurance by explaining the role of the service worker and emphasizing the importance of safety and family relationships. By involving Beth in the process and seeking her consent, the therapist empowers her to take an active role in seeking help and support.",
-                "strategy": [
-                    "Question"
-                ]
-            }
-        ],
-        "summary": "The therapist reassures the student about involving child protective services and emphasizes the importance of ensuring her safety and maintaining family relationships. The therapist encourages the student to participate in the process of seeking help and support."
+  "theme": "solution-focused brief therapy: building trust in the therapeutic relationship through acceptance and support for students sharing their experiences.",
+  "psychotherapy": "Solution-Focused Brief Therapy",
+  "topic": "Child-Parent Relationship Issues",
+  "stage": "",
+  "guide": "",
+  "is_same_qa": 0,
+  "is_same_session": 0,
+  "background": "A student confides in the therapist about a disturbing experience with her uncle and her concerns about her mother's reaction.",
+  "reasoning": "The student's willingness to share her experience may indicate that the therapist's acceptance and support have built trust in the therapeutic relationship.",
+  "dialog": [
+    {
+      "speaker": "Seeker",
+      "participant": "Beth",
+      "content": "It’s my older uncle … He comes over a lot and stays with us, and sometimes my mom leaves us with him when she goes out. I liked him, but last semester he stayed over and he wanted to kiss me. I didn’t know what to do. My mom likes him a lot, and they are close. Now, he says he loves me, and he has put his hands on me, you know, my breasts. I just stood there and didn’t know what to do. I don’t want to let mom know; she would be mad at me.",
+      "id": "98-0",
+      "observation": "Beth discloses a distressing experience involving her uncle, expressing confusion and fear about the situation and concern about her mother's reaction, indicating a complex family dynamic and her reluctance to cause conflict.",
+      "emotional label": ["Fear", "Shame"]
+    },
+    {
+      "speaker": "Supporter",
+      "participant": "Therapist",
+      "content": "Thank you for taking the chance and trying to help your situation by sharing it with me. I understand how difficult it must have been for you keeping this secret and trying to protect your mom’s relationship with her brother. I admire your courage to take care of yourself given the very difficult situation you’ve been in. Do you have any ideas about how you would want to make this better and not have this happening?",
+      "id": "98-1",
+      "reasoning": "The therapist acknowledges Beth's bravery in sharing her experience and offers support while encouraging her to consider ways to improve her situation, empowering her to take control and explore solutions.",
+      "strategy": ["Question"]
+    },
+    {
+      "speaker": "Seeker",
+      "participant": "Beth",
+      "content": "I’m aware of child protective services. They see some of my friends and their families. I don’t want to have to leave my mom, and I don’t want her to be mad at me.",
+      "id": "98-2",
+      "observation": "Beth demonstrates awareness of potential support services but expresses concerns about the impact on her family dynamics, highlighting her internal conflict and the importance of maintaining her relationship with her mother.",
+      "emotional label": ["Fear", "Guilty"]
+    },
+    {
+      "speaker": "Supporter",
+      "participant": "Therapist",
+      "content": "I agree that you should be able to stay in your home and also to have a good relationship with your mom. You are aware of child protective services. It is their job to help protect you and any other young person. I agree with you that it is best when you stay at home and make it a safe place for you and your brothers and sisters and your mom, too. From what you have shared, it would be important to contact child protective services. I know several people there, and I would like for you to help me make this contact so that you can make your home safe. Will you help make that happen?",
+      "id": "98-3",
+      "reasoning": "The therapist validates Beth's desire to maintain her family relationships while emphasizing the importance of her safety, suggesting a collaborative approach to involve child protective services and ensure a safe environment for Beth and her family.",
+      "strategy": ["Question"]
+    },
+    {
+      "speaker": "Seeker",
+      "participant": "Beth",
+      "content": "I guess … But I’m still afraid of what mom might say and of her brother.",
+      "id": "98-4",
+      "observation": "Beth expresses fear of potential repercussions within her family, indicating the internal struggle she faces in balancing her safety with her relationships and the challenging decisions ahead.",
+      "emotional label": ["Anxiety", "Fear"]
+    },
+    {
+      "speaker": "Supporter",
+      "participant": "Therapist",
+      "content": "I understand your not wanting to upset your mom or even your uncle. It’s not an easy decision to make. What do you think would be the best way to handle this so that you don’t have to deal with your uncle’s behavior and you can feel safe?",
+      "id": "98-5",
+      "reasoning": "The therapist acknowledges Beth's concerns and explores her thoughts on managing the situation delicately, encouraging her to consider strategies that prioritize her safety and well-being while navigating the complexities of family dynamics.",
+      "strategy": ["Question"]
+    },
+    {
+      "speaker": "Seeker",
+      "participant": "Beth",
+      "content": "Do you think the service worker would help me tell my mother and help make things easier after she finds out?",
+      "id": "98-6",
+      "observation": "Beth's question reflects her uncertainty and concern about how to handle the situation with her mother, indicating a need for support and guidance.",
+      "emotional label": ["Fear"]
+    },
+    {
+      "speaker": "Supporter",
+      "participant": "Therapist",
+      "content": "I can only say that that is exactly the work they do with families in these situations. It’s important that you are safe and that your family can continue to be close. And it’s important that the worker understand what happened and then has your help in finding the best way to work with your mom. You can meet and talk with the worker here at school and help her understand the situation. Is that okay with you?",
+      "id": "98-7",
+      "reasoning": "The therapist acknowledges Beth's concerns and offers reassurance by explaining the role of the service worker and emphasizing the importance of safety and family relationships. By involving Beth in the process and seeking her consent, the therapist empowers her to take an active role in seeking help and support.",
+      "strategy": ["Question"]
     }
+  ],
+  "summary": "The therapist reassures the student about involving child protective services and emphasizes the importance of ensuring her safety and maintaining family relationships. The therapist encourages the student to participate in the process of seeking help and support."
+}
 ```
 
 ### Chinese Data Example
 
-```json
+````json
    ```json
 {
     "theme": "Partner Relationship Issues",
@@ -341,4 +320,4 @@ Psy-Insight is a bilingual, interpretable multi-task dataset for psychological c
     ],
     "summary": "在“来访者因自己公寓里凌乱而不悦”，与“她的童年记忆，以及当时她母亲抑郁发作后家里的状况”之间，治疗师可能会去尝试建立联系。尽管这之间可能会存在着某种联系，但在本节面询中，尚无证据下这个结论，所以，此刻治疗师没有理由不就其字面意涵来理解来访者。治疗师没有将来访者的思考强行纳入所谓心理动力取向的诠释模式，而是把握这个机会，去了解来访者在面对压力时的反应，了解她调适日常生活的能力。\n在本次面询中，治疗师采取了多种策略来处理来访者的情绪和行为。首先，治疗师澄清了来访者的焦虑并指出其能力和潜在的成长空间，鼓励她积极参与治疗。治疗师还观察到来访者对自我认知和人际关系的困惑，理解她的需求并给予肯定和指导。此外，治疗师避免了对来访者的负面评价，而是以好奇心和理解回应她的挑战，让来访者感到被接纳和理解。治疗师的策略包括鼓励、肯定、理解和引导，以帮助来访者面对自身问题并获得成长。这些策略有助于建立积极的治疗关系，促进来访者的自我探索和改善。"
 }
-```
+````
