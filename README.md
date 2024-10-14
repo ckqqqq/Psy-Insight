@@ -1,23 +1,20 @@
-
-
 <h1 align="center">
 <img src="https://github.com/CriticBench/criticbench.github.io/raw/main/docs/static/images/criticbench_logo.png" width="80" alt="CriticBench" />
 <br>
 Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseling
 </h1>
 
-
 <div align="center">
 
 ![](https://img.shields.io/badge/Code%20License-MIT-green)
 
 </div>
-
+<!-- https://anonymous.4open.science/r/Psy-Insight-F65E/docs/pic/ -->
 <p align="center">
   <a href="https://psy-insight.anonymous-demo.fun/"><b>[🌐 Website]</b></a> •
   <a href="https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/"><b>[🌐 Backup Website]</b></a> •
   <a href="https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/"><b>[📜 Paper]</b></a> •
-  <a href="https://anonymous.4open.science/r/Psy-Insight-F65E"><b>[🤗 Dataset]</b></a> •
+  <a href="https://anonymous.4open.science/r/Psy-Insight-F65E/data/"><b>[🤗 Dataset]</b></a> •
   <a href="https://anonymous.4open.science/r/Psy-Insight-F65E"><b>[🐱 GitHub]</b></a>
   <br>
   <!-- <a href="https://twitter.com/TODO"><b>[🐦 Twitter]</b></a> • -->
@@ -25,10 +22,12 @@ Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseli
   <!-- <a href="#%EF%B8%8F-citation">Citation</a> -->
 </p>
 
+
+
+
 <p align="center">
 Repo for "<a href="https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/" target="_blank">Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseling</a>"
 </p>
-
 
 <p align="center">
   All content in this repository is anonymous.
@@ -38,11 +37,43 @@ Repo for "<a href="https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/" 
 
 Psy-Insight is a bilingual, interpretable multi-task dataset for psychological counseling dialogues, designed to support the application of large language models in mental health. The dataset comprises 6,208 rounds of multi-turn counseling dialogues across 520 topics in English (and 4,310 topics with 5,776 rounds in Chinese). Each dialogue round is annotated with step-by-step reasoning labels and multi-task labels. These include emotional labels (e.g., happy), psychological treatment method labels (e.g., Cognitive Behavioral Therapy CBT), strategy labels (e.g., question), and step-by-step reasoning annotations (e.g., background introduction to a dialogue topic, session summary, counselor reasoning, etc.). Psy-Insight's design is not only suitable for tasks such as emotion classification and psychological treatment interpretation but also for multi-task instruction fine-tuning of large language models.
 
-
 ## Construction Workflow
+
 ![Flow Chart of Psy-Insight Construction](./docs/pic/github_demo.png)
  Flow Chart of Psy-Insight Construction
-### English Data Example
+
+## Data Example
+
+ A counseling cycle for a client consists of several sessions. In each session, the counselor and the client engage in multiple turns of conversation around a specific theme or goal. We annotate these two dialogue granularities with short labels and COT annotations.
+
+* ### Session-level Annotation
+* | Label           | Type                     | Meaning                                                                                                                  | Example                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+  | --------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+  | dialog_id       | Short Label              | ID for this session                                                                                                     | 000001                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+  | theme           | COT annotation           | The brief summary of this                                                                                               | cognitive behaviour therapy: exploring cognition through images and thoughts in therapy to uncover emotionally charged thoughts and beliefs.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+  | psychotherapy   | short label              | The psychotherapy used by the counselor in this session                                                                  | Cognitive Behaviour Therapy / Solution-Focused Brief Therapy / Psychoanalytic Therapy                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+  | topic           | short label              | The topic label of this session                                                                                        | Appearance Anxiety / Partner Relationship / Job Crisis / Academic Pressure                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+  | stage           | short label             | The stage of counseling session in the overall treatment cycle                                                           | 1st Session (the first meeting between the patient and the therapist.) / 6th to 31st Session / Regular Session                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+  | guide           | COT annotation          | The brief step-by-step guide for therapists, covering the client's situation and the corresponding therapist's strategy | 治疗师通过多模式评估全面了解来访者的问题，制定个性化的治疗计划。在治疗中，她可通过行为测量、行为预演和角色演练等技术来处理问题，并逐步改变自我认知加强的信念。                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+  | is_same_qa      | short label              | Does the first respones in this session consistent with the final one from previous session?                             | 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+  | is_same_session | short label              | Is this session consistent with the previous one                                                                         | 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+  | background      | COT annotation          | background of client in this session                                                                                     | A client struggles with feelings of guilt and inadequacy related to not having a traditional job.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+  | reasoning       | COT annotation          | Step-by-step reasoning about the session from therapist                                                                 | The therapist's suggestions can stimulate productive introspection in the client, but an excess of suggestions may lead to client passivity. It is important for the therapist to assess the client's response to suggestions to ensure genuine progress in therapy. Additionally, suggesting opposite thoughts can help clients explore their automatic thoughts and underlying beliefs.                                                                                                                                                                                                                                                  |
+  | dialog          | counseling session unit | Dailog Unit                                                                                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+  | summary         | COT annotation          | Step-by-step summary about the sessions from therapist                                                                 | 来访者和我讨论了找到一个完全为她自己所用的时间对她而言有多么的困难。我特别强调这也是个好机会——她可以学着向别人索取自己的所需，并坚持到底直到得到满意的结果。这样她就同时完成了另外一个目标——向别人索取自己所需要的东西。学会说“不”来访者告诉我，她到目前为止一直在不停地为每个人付出，但是她却无法为自己要求些什么。我们已经对后面这个问题进行了处理，并且获得了一定的成功。来访者告诉我，当别人要求她参与到某个活动中时，她不知道该如何拒绝，尤其当别人说他们需要她的时候，她更不知道如何说“不”。她希望能谈论她的父亲，她认为是父亲让自已失去自主权的。我要求她回忆最近一次她觉得无法拒绝别人的情况，并将这个场景详细地描述出来。 |
+
+  ### Turn-level Annotations in counseling session unit
+* | Label           | Type             | Meaning                                                    | Example                                                                                                                                                                                                              |
+  | --------------- | ---------------- | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+  | speaker         | short label     | Identity of speaker                                       | "seeker" or "supporter""                                                                                                                                                                                            |
+  | participant     | short label      | The term used for the speaker in counseling conversations. | "Therapist"/\"Carl"\"/"Beth"/"Dr. Ralph."/"Husband"/"Bob"                                                                                                                                                            |
+  | content         | dialog utterance | The content of counseling conversation                  | 我觉得你这个决定有一定道理，不过呢，就像在之前治疗里那样，每下一 款商品个结论，我们都要给个机会来验证它一下。你想要什么时候停止呢？/ How and on what basis was the decision made to end or interrupt the treatment? |
+  | strategy        | short label      | The strategy of therapist                               | Question / Information                                                                                                                                                                                              |
+  | emotional label | short label      | The emotion of client                                   | Anxiety / Neural / Happiness                                                                                                                                                                                         |
+  | reasoning       | COT annotation   | The step-by-step reasoning from therapist                  | The therapist is inquiring about the circumstances surrounding the termination of Miss Banks' therapy with Dr. Ralph to gain insight into her treatment progress and any unresolved issues.                          |
+  | observation     | COT annotation   | The summary of client utterance                            | Miss Banks expresses uncertainty and skepticism about continuing therapy, influenced by discussions with friends and her past doubts.                                                                                |
+* ## Example data unit of a session
+
 ```json
 {
         "theme": "solution-focused brief therapy: building trust in the therapeutic relationship through acceptance and support for students sharing their experiences.",
@@ -143,8 +174,8 @@ Psy-Insight is a bilingual, interpretable multi-task dataset for psychological c
     }
 ```
 
-
 ### Chinese Data Example
+
 ```json
    ```json
 {
@@ -309,5 +340,3 @@ Psy-Insight is a bilingual, interpretable multi-task dataset for psychological c
     "summary": "在“来访者因自己公寓里凌乱而不悦”，与“她的童年记忆，以及当时她母亲抑郁发作后家里的状况”之间，治疗师可能会去尝试建立联系。尽管这之间可能会存在着某种联系，但在本节面询中，尚无证据下这个结论，所以，此刻治疗师没有理由不就其字面意涵来理解来访者。治疗师没有将来访者的思考强行纳入所谓心理动力取向的诠释模式，而是把握这个机会，去了解来访者在面对压力时的反应，了解她调适日常生活的能力。\n在本次面询中，治疗师采取了多种策略来处理来访者的情绪和行为。首先，治疗师澄清了来访者的焦虑并指出其能力和潜在的成长空间，鼓励她积极参与治疗。治疗师还观察到来访者对自我认知和人际关系的困惑，理解她的需求并给予肯定和指导。此外，治疗师避免了对来访者的负面评价，而是以好奇心和理解回应她的挑战，让来访者感到被接纳和理解。治疗师的策略包括鼓励、肯定、理解和引导，以帮助来访者面对自身问题并获得成长。这些策略有助于建立积极的治疗关系，促进来访者的自我探索和改善。"
 }
 ```
-
-

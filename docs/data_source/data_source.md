@@ -1,16 +1,19 @@
-## Data Source of Raw Counseling Data
+## Data Source \ Copyright of Raw Counseling Data
+
 ### Raw Datasets
-* MNBVC(Massive Never-ending BT Vast Chinese corpus) 
-* The Pile: An 800GB Dataset of Diverse Text for Language Modeling (English corpus) 
-    * Book3 dataset  
+
+* MNBVC(Massive Never-ending BT Vast Chinese corpus)
+* The Pile: An 800GB Dataset of Diverse Text for Language Modeling (English corpus)
+  * Book3 dataset
 
 ### Crawled Data Source
+
 * https://www.psychotherapy.net/account
 
-### Books 
+### Books
+
 * eg,. https://annas-archive.gs/md5/e94220f05348c037f860bd1eb890414a
 * 
-
 
 ```
 @misc{mnbvc,
