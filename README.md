@@ -15,6 +15,7 @@ Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseli
 
 <p align="center">
   <a href="https://psy-insight.anonymous-demo.fun/"><b>[🌐 Website]</b></a> •
+  <a href="https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/"><b>[🌐 Backup Website]</b></a> •
   <a href="https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/"><b>[📜 Paper]</b></a> •
   <a href="https://anonymous.4open.science/r/Psy-Insight-F65E"><b>[🤗 Dataset]</b></a> •
   <a href="https://anonymous.4open.science/r/Psy-Insight-F65E"><b>[🐱 GitHub]</b></a>
@@ -28,10 +29,6 @@ Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseli
 Repo for "<a href="https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/" target="_blank">Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseling</a>"
 </p>
 
-[https://psy-Insight.anonymous-demo.fun/](https://psy-insight.anonymous-demo.fun/)
-
-
-[Backup Mirror Website](https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/)
 # Psy-Insight
 
 Psy-Insight is a bilingual, interpretable multi-task dataset for psychological counseling dialogues, designed to support the application of large language models in mental health. The dataset comprises 6,208 rounds of multi-turn counseling dialogues across 520 topics in English (and 4,310 topics with 5,776 rounds in Chinese). Each dialogue round is annotated with step-by-step reasoning labels and multi-task labels. These include emotional labels (e.g., happy), psychological treatment method labels (e.g., Cognitive Behavioral Therapy CBT), strategy labels (e.g., question), and step-by-step reasoning annotations (e.g., background introduction to a dialogue topic, session summary, counselor reasoning, etc.). Psy-Insight's design is not only suitable for tasks such as emotion classification and psychological treatment interpretation but also for multi-task instruction fine-tuning of large language models.
