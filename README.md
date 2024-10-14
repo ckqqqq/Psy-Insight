@@ -13,8 +13,8 @@ Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseli
 <p align="center">
   <a href="https://psy-insight.anonymous-demo.fun/"><b>[🌐 Website]</b></a> •
   <a href="https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/"><b>[🌐 Backup Website]</b></a> •
-  <a href="https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/"><b>[📜 Paper]</b></a> •
-  <a href="https://anonymous.4open.science/r/Psy-Insight-F65E/data/"><b>[🤗 Dataset]</b></a> •
+  <a href="https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/static/pdfs/psy-insight.pdf"><b>[📜 Paper]</b></a> •
+  <a href="https://anonymous.4open.science/r/Psy-Insight-F65E/data/README.md"><b>[🤗 Dataset]</b></a> •
   <a href="https://anonymous.4open.science/r/Psy-Insight-F65E"><b>[🐱 GitHub]</b></a>
   <br>
   <!-- <a href="https://twitter.com/TODO"><b>[🐦 Twitter]</b></a> • -->
@@ -30,7 +30,7 @@ Repo for "<a href="https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/" 
 </p>
 
 <p align="center">
-  All content in this repository is anonymous.
+  All content in this repository is anonymous. 
 </p>
 
 ## Abstract
@@ -46,7 +46,9 @@ Psy-Insight is a bilingual, interpretable multi-task dataset for psychological c
 
  A counseling cycle for a client consists of several sessions. In each session, the counselor and the client engage in multiple turns of conversation around a specific theme or goal. We annotate these two dialogue granularities with short labels and COT annotations.
 
-* ### Session-level Annotation
+
+### Session-level Annotations
+
 * | Label           | Type                     | Meaning                                                                                                                  | Example                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
   | --------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
   | dialog_id       | Short Label              | ID for this session                                                                                                     | 000001                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
