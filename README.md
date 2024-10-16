@@ -300,6 +300,7 @@ A counseling cycle for a client consists of several sessions. In each session, t
 If you find this repository helpful, please consider citing our paper:
 
 ```
-@misc{
+@misc{ goodluck
+
 }
 ```
