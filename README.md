@@ -49,7 +49,7 @@ Flow Chart of Psy-Insight Construction
 <!-- code2024/Psy-Insight/docs/images/overview/Data_Collection.png -->
 
 <p align="center">
-    <img src=".docs/images/overview/Data_Collection.png" width="1000">
+    <img src="./docs/images/overview/Data_Collection.png" width="1000">
         <br>
     <em>Figure 1: An overview for the Psy-Insight.</em>
 </p>
