@@ -94,8 +94,10 @@ A counseling cycle for a client consists of several sessions. In each session, t
         <br>
     <em>Figure 2: The target tasks for the Psy-Insight dataset are as follows: Label Classification, Retrieval Argument Generation, Explainable Counseling Dialogue Generation, Counseling Summarization and so on.</em>
 </p>
+
                                                                     |
-- ### 📝 Example data unit of a session
+
+### 📝 Example data unit of a session
 
 ```json
 {
