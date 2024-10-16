@@ -54,12 +54,6 @@ Psy-Insight is a bilingual, interpretable multi-task dataset for psychological c
 Flow Chart of Psy-Insight Construction
 code2024/Psy-Insight/docs/images/overview/Data_Collection.png -->
 
-<p align="center">
-    <img src="./docs/images/overview/EMNLP_multi-task.png" width="1000">
-        <br>
-    <em>Figure 2: The target tasks for the Psy-Insight dataset are as follows: Label Classification, Retrieval Argument Generation, Explainable Counseling Dialogue Generation, Counseling Summarization and so on.</em>
-</p>
-
 ## 📊 Data Example
 
 A counseling cycle for a client consists of several sessions. In each session, the counselor and the client engage in multiple turns of conversation around a specific theme or goal. We annotate these two dialogue granularities with short labels and COT annotations.
@@ -92,6 +86,15 @@ A counseling cycle for a client consists of several sessions. In each session, t
   | emotional label | short label      | The emotion of client                                      | Anxiety / Neural / Happiness                                                                                                                                                                                        |
   | reasoning       | COT annotation   | The step-by-step reasoning from therapist                  | The therapist is inquiring about the circumstances surrounding the termination of Miss Banks' therapy with Dr. Ralph to gain insight into her treatment progress and any unresolved issues.                         |
   | observation     | COT annotation   | The summary of client utterance                            | Miss Banks expresses uncertainty and skepticism about continuing therapy, influenced by discussions with friends and her past doubts.                                                                               |
+
+### Target Tasks
+
+<p align="center">
+    <img src="./docs/images/overview/EMNLP_multi-task.png" width="1000">
+        <br>
+    <em>Figure 2: The target tasks for the Psy-Insight dataset are as follows: Label Classification, Retrieval Argument Generation, Explainable Counseling Dialogue Generation, Counseling Summarization and so on.</em>
+</p>
+                                                                    |
 - ### 📝 Example data unit of a session
 
 ```json
