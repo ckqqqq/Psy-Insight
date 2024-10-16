@@ -300,12 +300,6 @@ A counseling cycle for a client consists of several sessions. In each session, t
 If you find this repository helpful, please consider citing our paper:
 
 ```
-@misc{lin2024criticbench,
-  title={CriticBench: Benchmarking LLMs for Critique-Correct Reasoning},
-  author={Zicheng Lin and Zhibin Gou and Tian Liang and Ruilin Luo and Haowei Liu and Yujiu Yang},
-  year={2024},
-  eprint={2402.14809},
-  archivePrefix={arXiv},
-  primaryClass={cs.CL}
+@misc{
 }
 ```
