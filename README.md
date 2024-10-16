@@ -45,7 +45,7 @@ Psy-Insight is a bilingual, interpretable multi-task dataset for psychological c
 ## 🔢 Construction Workflow
 
 <p align="center">
-    <img src="./docs/pic/github_demo.png" width="1000">
+    <img src="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/pic/github_demo.png" width="1000">
         <br>
     <em>Figure 1：Flow chart of the Psy-Insight construction pipeline.</em>
 </p>
@@ -90,7 +90,7 @@ A counseling cycle for a client consists of several sessions. In each session, t
 ### Target Tasks
 
 <p align="center">
-    <img src="./docs/images/overview/EMNLP_multi-task.png" width="1000">
+    <img src="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/images/overview/EMNLP_multi-task.png" width="1000">
         <br>
     <em>Figure 2: The target tasks for the Psy-Insight dataset are as follows: Label Classification, Retrieval Argument Generation, Explainable Counseling Dialogue Generation, Counseling Summarization and so on.</em>
 </p>
