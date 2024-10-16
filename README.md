@@ -51,7 +51,7 @@ Flow Chart of Psy-Insight Construction
 <p align="center">
     <img src=".docs/images/overview/Data_Collection.png" width="1000">
         <br>
-    <em>Figure 1: An overview for the CriticBench construction.</em>
+    <em>Figure 1: An overview for the Psy-Insight.</em>
 </p>
 
 ## 📊 Data Example
