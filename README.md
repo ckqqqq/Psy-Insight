@@ -95,15 +95,13 @@ A counseling cycle for a client consists of several sessions. In each session, t
     <em>Figure 2: The target tasks for the Psy-Insight dataset are as follows: Label Classification, Retrieval Argument Generation, Explainable Counseling Dialogue Generation, Counseling Summarization and so on.</em>
 </p>
 
-### 
+###
 
 <p align="center">
     <img src="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/images/overview/EMNLP_comp-916.png" width="1000">
         <br>
-    <em>Figure 3: The comparison of short-label oriented dataset and COT-.</em>
+    <em>Figure 3: Comparison between short-label-oriented annotation and chain-of-thought (COT) oriented annotation.</em>
 </p>
-
-                                                                    |
 
 ### 📝 Example data unit of a session
 
@@ -325,20 +323,23 @@ A counseling cycle for a client consists of several sessions. In each session, t
   "summary": "在“来访者因自己公寓里凌乱而不悦”，与“她的童年记忆，以及当时她母亲抑郁发作后家里的状况”之间，治疗师可能会去尝试建立联系。尽管这之间可能会存在着某种联系，但在本节面询中，尚无证据下这个结论，所以，此刻治疗师没有理由不就其字面意涵来理解来访者。治疗师没有将来访者的思考强行纳入所谓心理动力取向的诠释模式，而是把握这个机会，去了解来访者在面对压力时的反应，了解她调适日常生活的能力。\n在本次面询中，治疗师采取了多种策略来处理来访者的情绪和行为。首先，治疗师澄清了来访者的焦虑并指出其能力和潜在的成长空间，鼓励她积极参与治疗。治疗师还观察到来访者对自我认知和人际关系的困惑，理解她的需求并给予肯定和指导。此外，治疗师避免了对来访者的负面评价，而是以好奇心和理解回应她的挑战，让来访者感到被接纳和理解。治疗师的策略包括鼓励、肯定、理解和引导，以帮助来访者面对自身问题并获得成长。这些策略有助于建立积极的治疗关系，促进来访者的自我探索和改善。"
 }
 ```
+
 ## Statistics
+
 <p align="center">
     <img src="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/images/statistics/statistics.png" width="1000">
         <br>
     <em>Figure X: Statistics of Chinese (left) and English (right) Counseling in Psy-Insight. In Psy-Insight, dialogues are organized in a hierarchical manner, starting from the broadest level (Case) down to the most specific (Turn). During the entire counseling process for a particular case, the therapist conducts a session centered around a specific topic. Each session includes dozens of dialogue turns. </em>
 </p>
 
-
 ## ⚖️ Evaluation And Result
+
 <!-- <p align="center">
     <img src="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/images/statistics/exp.png" width="500">
         <br>
     <em>Figure 4: Result for finetuning LLMs with different combinations of annotations. The mix-instruction chatbot is trained by performing instruction-tuning on multiple tasks simultaneously. </em>
 </p> -->
+
 ### Automatic Evaluation
 
 <p align="center">
@@ -347,8 +348,9 @@ A counseling cycle for a client consists of several sessions. In each session, t
     <em>Figure 4: Result for finetuning LLMs with different combinations of annotations. The mix-instruction chatbot is trained by performing instruction-tuning on multiple tasks simultaneously. </em>
 </p>
 
-#### Evaluation Code 
-<a href="https://anonymous.4open.science/r/Psy-Insight-F65E/auto-eval/main.py"><b>[🌐 Quick Start]</b></a> • 
+#### Evaluation Code
+
+<a href="https://anonymous.4open.science/r/Psy-Insight-F65E/auto-eval/main.py"><b>[🌐 Quick Start]</b></a> •
 
 ## ☕️ Citation
 
