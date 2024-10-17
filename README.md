@@ -375,7 +375,7 @@ A counseling cycle for a client consists of several sessions. In each session, t
 ### Human Expert Evaluation
 
 
-<a href="https://anonymous.4open.science/r/Psy-Insight-F65E/human-expert-eval/README.md"><b>[🐦 Video / Figure ]</b></a> • 
+<a href="https://anonymous.4open.science/r/Psy-Insight-F65E/human-expert-eval/README.md"><b>[🐦 Result ]</b></a> • 
 
 
 ### Evaluation Code
