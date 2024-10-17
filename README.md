@@ -358,11 +358,11 @@ A counseling cycle for a client consists of several sessions. In each session, t
 
 ## ⚖️ Evaluation And Result
 
-<!-- <p align="center">
+<p align="center">
     <img src="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/images/statistics/exp.png" width="500">
         <br>
-    <em>Figure 4: Result for finetuning LLMs with different combinations of annotations. The mix-instruction chatbot is trained by performing instruction-tuning on multiple tasks simultaneously. </em>
-</p> -->
+    <em>Figure 8: Result for finetuning LLMs with different combinations of annotations. The mix-instruction chatbot is trained by performing instruction-tuning on multiple tasks simultaneously. </em>
+</p>
 
 ### Automatic Evaluation
 
