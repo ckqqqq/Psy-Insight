@@ -26,26 +26,9 @@ Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseli
 
 
 
-
-  [**[🌐 GitHub]**](https://anonymous.4open.science/r/Psy-Insight-F65E) • 
-  [**[🐦 Video / Figure ]**](https://psy-insight.anonymous-demo.fun/) • 
-  
-  [**[📜 Paper]**](https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/static/pdfs/psy-insight.pdf) •
-  [**[🤗 Dataset]**](https://anonymous.4open.science/r/Psy-Insight-F65E/data/README.md) •
-  [**[🐱 Website]**](https://anonymous.4open.science/r/Psy-Insight-F65E)
-  
-
   
   
   
-
-<!-- [**[🌐 GitHub]**](https://anonymous.4open.science/r/Psy-Insight-F65E) •
-[**[🐦 Video / Figure ]**](https://psy-insight.anonymous-demo.fun/) •
-
-[**[📜 Paper]**](https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/static/pdfs/psy-insight.pdf) •
-[**[🤗 Dataset]**](https://anonymous.4open.science/r/Psy-Insight-F65E/data/README.md) •
-[**[🐱 Website]**](https://anonymous.4open.science/r/Psy-Insight-F65E) -->
-
 <p align="center">
 Repo for "<a href="https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/" target="_blank">Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseling</a>"
 </p>
@@ -391,12 +374,13 @@ A counseling cycle for a client consists of several sessions. In each session, t
 
 ### Human Expert Evaluation
 
-`<a href="https://anonymous.4open.science/r/Psy-Insight-F65E/auto-eval/README.md"><b>`[🌐 Quick Start]`</b></a>` •
+
+<a href="https://anonymous.4open.science/r/Psy-Insight-F65E/human-expert-eval/README.md"><b>[🐦 Video / Figure ]</b></a> • 
 
 
 ### Evaluation Code
 
-`<a href="https://anonymous.4open.science/r/Psy-Insight-F65E/human-expert-eval/README.md"><b>`[🌐 Quick Start]`</b></a>` •
+<a href="https://anonymous.4open.science/r/Psy-Insight-F65E/auto-eval/README.md"><b> [🌐 Code] </b></a> •
 
 ## ☕️ Citation
 
