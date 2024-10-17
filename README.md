@@ -327,18 +327,19 @@ A counseling cycle for a client consists of several sessions. In each session, t
 ```
 ## Statistics
 <p align="center">
-    <img src="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/images/statistics/statistics.png" width="500">
+    <img src="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/images/statistics/statistics.png" width="1000">
         <br>
     <em>Figure X: Statistics of Chinese (left) and English (right) Counseling in Psy-Insight. In Psy-Insight, dialogues are organized in a hierarchical manner, starting from the broadest level (Case) down to the most specific (Turn). During the entire counseling process for a particular case, the therapist conducts a session centered around a specific topic. Each session includes dozens of dialogue turns. </em>
 </p>
 
 
 ## ⚖️ Evaluation And Result
-<p align="center">
+<!-- <p align="center">
     <img src="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/images/statistics/exp.png" width="500">
         <br>
     <em>Figure 4: Result for finetuning LLMs with different combinations of annotations. The mix-instruction chatbot is trained by performing instruction-tuning on multiple tasks simultaneously. </em>
-</p>
+</p> -->
+### Automatic Evaluation
 
 <p align="center">
     <img src="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/images/statistics/exp.png" width="1000">
@@ -346,6 +347,8 @@ A counseling cycle for a client consists of several sessions. In each session, t
     <em>Figure 4: Result for finetuning LLMs with different combinations of annotations. The mix-instruction chatbot is trained by performing instruction-tuning on multiple tasks simultaneously. </em>
 </p>
 
+#### Evaluation Code 
+<a href="https://anonymous.4open.science/r/Psy-Insight-F65E/auto-eval/main.py"><b>[🌐 Quick Start]</b></a> • 
 
 ## ☕️ Citation
 
