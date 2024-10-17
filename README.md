@@ -9,14 +9,14 @@ Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseli
 ![](https://img.shields.io/badge/Code%20License-MIT-green)
 
 </div>
-<!-- https://anonymous.4open.science/r/Psy-Insight-F65E/docs/pic/ -->
+<!-- https://anonymous.4open.science/r/Psy-Insight-F65E/docs/pic/ https://anonymous.4open.science/r/Psy-Insight-F65E/expert-eval/README.md-->
 <p align="center">
   <a href="https://anonymous.4open.science/r/Psy-Insight-F65E"><b>[🌐 GitHub]</b></a> • 
-  <a href="https://psy-insight.anonymous-demo.fun/"><b>[🐦 Video / Figure ]</b></a> • 
+  <a href="https://anonymous.4open.science/r/Psy-Insight-F65E/expert-eval/README.md"><b>[🐦 Expert Evaluation]</b></a> • 
   <!-- <a href="https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/"><b>[🌐 Video]</b></a> • -->
   <a href="https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/static/pdfs/psy-insight.pdf"><b>[📜 Paper]</b></a> •
   <a href="https://anonymous.4open.science/r/Psy-Insight-F65E/data/README.md"><b>[🤗 Dataset]</b></a> •
-  <a href="https://anonymous.4open.science/r/Psy-Insight-F65E"><b>[🐱 Website]</b></a>
+  <a href="https://psy-insight.anonymous-demo.fun/"><b>[🐱 Backup Website]</b></a>
   <br>
   <!-- <a href="https://twitter.com/TODO"><b>[🐦 Twitter]</b></a> • -->
   <!-- <a href="#-quick-start">Quick Start</a> • -->
@@ -372,11 +372,10 @@ A counseling cycle for a client consists of several sessions. In each session, t
     <em>Figure 8: Result for finetuning LLMs with different combinations of annotations. The mix-instruction chatbot is trained by performing instruction-tuning on multiple tasks simultaneously. </em>
 </p>
 
-### Human Expert Evaluation
+### Human Psychotherapist Evaluation
 
-<!-- /home/ckqsudo/code2024/Psy-Insight/human-expert-eval -->
-<!-- <a href="https://anonymous.4open.science/r/Psy-Insight-F65E/human-expert-eval/eval.md"><b>[🐦 Result ]</b></a> •  -->
 
+<a href="https://anonymous.4open.science/r/Psy-Insight-F65E/expert-eval/README.md"><b> [🌐 Human Expert Evaluation] </b></a> •
 
 ### Evaluation Code
 
