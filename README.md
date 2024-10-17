@@ -53,6 +53,11 @@ Psy-Insight is a bilingual, interpretable multi-task dataset for psychological c
 <!-- ![Flow Chart of Psy-Insight Construction](./docs/pic/github_demo.png)
 Flow Chart of Psy-Insight Construction
 code2024/Psy-Insight/docs/images/overview/Data_Collection.png -->
+<p align="center">
+    <img src="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/images/overview/EMNLP_comp-916.png" width="1000">
+        <br>
+    <em>Figure 2: Comparison of construction pipeline between short-label annotations and chain-of-thought (COT) annotations.</em>
+</p>
 
 ## 📊 Data Example
 
@@ -92,16 +97,11 @@ A counseling cycle for a client consists of several sessions. In each session, t
 <p align="center">
     <img src="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/images/overview/EMNLP_multi-task.png" width="1000">
         <br>
-    <em>Figure 2: The target tasks for the Psy-Insight dataset are as follows: Label Classification, Retrieval Argument Generation, Explainable Counseling Dialogue Generation, Counseling Summarization and so on.</em>
+    <em>Figure 3: The target tasks for the Psy-Insight dataset are as follows: Label Classification, Retrieval Argument Generation, Explainable Counseling Dialogue Generation, Counseling Summarization and so on.</em>
 </p>
 
-###
 
-<p align="center">
-    <img src="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/images/overview/EMNLP_comp-916.png" width="1000">
-        <br>
-    <em>Figure 3: Comparison between short-label-oriented annotation and chain-of-thought (COT) oriented annotation.</em>
-</p>
+
 
 ### 📝 Example data unit of a session
 
@@ -325,11 +325,34 @@ A counseling cycle for a client consists of several sessions. In each session, t
 ```
 
 ## Statistics
-
+### Dialogue
 <p align="center">
     <img src="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/images/statistics/statistics.png" width="1000">
         <br>
-    <em>Figure X: Statistics of Chinese (left) and English (right) Counseling in Psy-Insight. In Psy-Insight, dialogues are organized in a hierarchical manner, starting from the broadest level (Case) down to the most specific (Turn). During the entire counseling process for a particular case, the therapist conducts a session centered around a specific topic. Each session includes dozens of dialogue turns. </em>
+    <em>Figure 4 Statistics of Chinese (left) and English (right) Counseling in Psy-Insight. In Psy-Insight, dialogues are organized in a hierarchical manner, starting from the broadest level (Case) down to the most specific (Turn). During the entire counseling process for a particular case, the therapist conducts a session centered around a specific topic. Each session includes dozens of dialogue turns. </em>
+</p>
+
+### Turn-Level Annotations 
+<!-- /home/ckqsudo/code2024/Psy-Insight/docs/images/statistics/Turn-level.png -->
+<p align="center">
+    <img src="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/images/statistics/Turn-level.png" width="1300">
+        <br>
+    <em>Figure 5 Statistics of turn-level labels. </em>
+</p>
+
+### Session-Level Annotaions
+
+<p align="center">
+    <img src="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/images/statistics/session-level.png" width="700">
+        <br>
+    <em>Figure 6: Distribution of Sessions by Psychotherapy Type </em>
+</p>
+
+<!-- code2024/Psy-Insight/docs/images/statistics/Topic.png -->
+<p align="center">
+    <img src="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/images/statistics/Topic.png" width="700">
+        <br>
+    <em>Figure 7: Distribution of Sessions by Topic Type </em>
 </p>
 
 ## ⚖️ Evaluation And Result
@@ -345,12 +368,12 @@ A counseling cycle for a client consists of several sessions. In each session, t
 <p align="center">
     <img src="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/images/statistics/exp.png" width="1000">
         <br>
-    <em>Figure 4: Result for finetuning LLMs with different combinations of annotations. The mix-instruction chatbot is trained by performing instruction-tuning on multiple tasks simultaneously. </em>
+    <em>Figure 8: Result for finetuning LLMs with different combinations of annotations. The mix-instruction chatbot is trained by performing instruction-tuning on multiple tasks simultaneously. </em>
 </p>
 
 #### Evaluation Code
 
-<a href="https://anonymous.4open.science/r/Psy-Insight-F65E/auto-eval/main.py"><b>[🌐 Quick Start]</b></a> •
+<a href="https://anonymous.4open.science/r/Psy-Insight-F65E/auto-eval/README.md"><b>[🌐 Quick Start]</b></a> •
 
 ## ☕️ Citation
 
