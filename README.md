@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src="https://github.com/CriticBench/criticbench.github.io/raw/main/docs/static/images/criticbench_logo.png" width="80" alt="CriticBench" />
+<img src="https://github.com/ckqqqq/Psy-Insight/blob/main/docs/images/Psy-insight_logo.png" width="80" alt="Psy-Insight" />
 <br>
 Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseling
 </h1>
@@ -372,6 +372,8 @@ A counseling cycle for a client consists of several sessions. In each session, t
 
 <a href="https://anonymous.4open.science/r/Psy-Insight-F65E/expert-eval/README.md"><b> [🌐 Human Expert Evaluation] </b></a> •
 
+
+<!--  -->
 ### Evaluation Code
 
 <a href="https://anonymous.4open.science/r/Psy-Insight-F65E/auto-eval/README.md"><b> [🌐 Code] </b></a> •
