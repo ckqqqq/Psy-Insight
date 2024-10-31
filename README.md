@@ -1,4 +1,4 @@
-![009B1395](https://github.com/user-attachments/assets/a16a7150-cccb-40f2-a5b1-9554d20ea9ad)<h1 align="center">
+
 <img src="https://github.com/ckqqqq/Psy-Insight/blob/main/docs/images/Psy-insight_logo.png" width="80" alt="Psy-Insight" />
 <br>
 Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseling
