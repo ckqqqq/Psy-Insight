@@ -16,7 +16,7 @@ Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseli
   <!-- <a href="https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/"><b>[🌐 Video]</b></a> • -->
   <a href="https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/static/pdfs/psy-insight.pdf"><b>[📜 Paper]</b></a> •
   <a href="https://anonymous.4open.science/r/Psy-Insight-F65E/data/README.md"><b>[🤗 Dataset]</b></a> •
-  <a href="https://psy-insight.anonymous-demo.fun/"><b>[🐱 Backup Website]</b></a>
+  <a href="https://psy-insight.anonymous-demo.fun/"><b>[🐱 CopyRight]</b></a>
   <br>
   <!-- <a href="https://twitter.com/TODO"><b>[🐦 Twitter]</b></a> • -->
   <!-- <a href="#-quick-start">Quick Start</a> • -->
