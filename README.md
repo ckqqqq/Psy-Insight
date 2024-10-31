@@ -1,4 +1,4 @@
-
+<h1 align="center">
 <img src="https://github.com/ckqqqq/Psy-Insight/blob/main/docs/images/Psy-insight_logo.png" width="80" alt="Psy-Insight" />
 <br>
 Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseling
