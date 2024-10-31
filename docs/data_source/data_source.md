@@ -10,8 +10,8 @@ We collect and filter data from the following raw common crawl datasets based on
 * **Book3 dataset**
 	* [The Pile: An 800GB Dataset of Diverse Text for Language Modeling](https://huggingface.co/datasets/defunct-datasets/the_pile_books3)
 
-* Crawled Data Source
-	* **PsyArXiv Website **  
+* **Crawled Data Source**
+	* PsyArXiv
 	* [Emotional First Aid Raw Dataset](https://github.com/chatopera/efaqa-corpus-raw)
  	* [CBook](https://github.com/FudanNLPLAB/CBook-150K) 	
 
@@ -31,6 +31,7 @@ Book3 dataset is Shawn Presser's work and is part of EleutherAi/The Pile dataset
 * **Dataset:** [defunct-datasets/the_pile_books3 · Datasets at Hugging Face](https://huggingface.co/datasets/defunct-datasets/the_pile_books3) 
 * **Blog:**<img src="https://ckqqqq-qiker-image-service.oss-cn-beijing.aliyuncs.com/typora-image/image-20241031104009954.png" alt="image-20241031104009954" style="zoom:50%;" />
 * **MIT license:** [The MIT License – Open Source Initiative](https://opensource.org/license/mit)
+* **Scripts:** en_dataset_construction_pipeline floder
 * **Bibtex:**
 
 ```
@@ -63,9 +64,10 @@ The MNBVC Open Source Chinese Corpus Project provides a platform for researchers
 
 	* UTF-8 formatter[charset_mnbvc](https://github.com/alanshi/charset_mnbvc)
 
-	* TXT formatter [deduplication_mnbvc](https://github.com/aplmikex/deduplication_mnbvc)
+	* TXT files [deduplication_mnbvc](https://github.com/aplmikex/deduplication_mnbvc)
+ 	* Scripts: cn_dataset_construction_pipeline folder 
 
-		
+	
 
 ### PsyARXIV
 
@@ -74,7 +76,7 @@ The MNBVC Open Source Chinese Corpus Project provides a platform for researchers
 * Website link [ PsyArXiv Preprints](https://osf.io/preprints/psyarxiv)
 * Crawler scripts [isLinXu/xxarxiv_mnbvc](https://github.com/isLinXu/xxarxiv_mnbvc)
 * License: [License and copyright - arXiv info](https://info.arxiv.org/help/license/index.html)
-
+* Scripts: En_dataset_construction_pipeline floder
 
 ### [Emotional First Aid Raw Dataset](https://github.com/chatopera/efaqa-corpus-raw)
 
@@ -87,6 +89,7 @@ Emotional First Aid Raw Dataset (EFARD) is a paid psychological dataset. This da
 ### [CBook](https://github.com/FudanNLPLAB/CBook-150K) 
 A common crawled Chinese books dataset from Fudan NLP lab. We extract 10+ sessions from this dataset.
 * License: Apache 2.0
+* Scripts: cn_dataset_construction_pipeline folder
 * Scripts: http://www.doc-ai.cn/
 * Policy： It is allowed to be used for scientific research.
 
