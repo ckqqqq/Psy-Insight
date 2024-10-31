@@ -6,7 +6,6 @@ Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseli
 
 <div align="center">
 
-![](https://img.shields.io/badge/Code%20License-MIT-green)
 
 </div>
 <!-- https://anonymous.4open.science/r/Psy-Insight-F65E/docs/pic/ https://anonymous.4open.science/r/Psy-Insight-F65E/expert-eval/README.md-->
