@@ -1,4 +1,4 @@
-<h1 align="center">
+![009B1395](https://github.com/user-attachments/assets/a16a7150-cccb-40f2-a5b1-9554d20ea9ad)<h1 align="center">
 <img src="https://github.com/ckqqqq/Psy-Insight/blob/main/docs/images/Psy-insight_logo.png" width="80" alt="Psy-Insight" />
 <br>
 Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseling
@@ -15,8 +15,8 @@ Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseli
   <a href="https://anonymous.4open.science/r/Psy-Insight-F65E/expert-eval/README.md"><b>[🐦 Expert Evaluation]</b></a> • 
   <!-- <a href="https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/"><b>[🌐 Video]</b></a> • -->
   <a href="https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/static/pdfs/psy-insight.pdf"><b>[📜 Paper]</b></a> •
-  <a href="https://anonymous.4open.science/r/Psy-Insight-F65E/data/README.md"><b>[🤗 Dataset]</b></a> •
-  <a href="https://psy-insight.anonymous-demo.fun/"><b>[🐱 CopyRight]</b></a>
+  <a href="https://anonymous.4open.science/r/Psy-Insight-F65E/data/README.md"><b>[⚠️ Dataset]</b></a> •
+  <a href="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/data_source/data_source.md"><b>[ CopyRight]</b></a>
   <br>
   <!-- <a href="https://twitter.com/TODO"><b>[🐦 Twitter]</b></a> • -->
   <!-- <a href="#-quick-start">Quick Start</a> • -->
