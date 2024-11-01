@@ -1,6 +1,6 @@
 ## Data Source Info \ Copyright of Raw Data
 
-We collect and filter data from the following raw common crawl datasets based on dialogue structure and psychotherapy labels. The License of Psy-Insight inherits from these raw datasets, including the MIT license, the Apache-2.0 license, and the Chunsong public license.
+We collect and filter data from the following raw common crawl datasets based on dialogue structure and psychotherapy labels. The License of Psy-Insight inherits from raw data licenses including  MIT license, the Apache-2.0 license, and the Chunsong public license.
 
 ### Raw Datasets
 
