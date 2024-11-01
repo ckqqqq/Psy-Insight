@@ -5,6 +5,7 @@
 * MNBVC(Massive Never-ending BT Vast Chinese corpus)
 * The Pile: An 800GB Dataset of Diverse Text for Language Modeling (English corpus)
   * Book3 dataset
+* Psychotherapy Dataset
 
 ### Crawled Data Source
 
