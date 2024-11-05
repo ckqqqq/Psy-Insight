@@ -1,8 +1,8 @@
-## Introduction
+## How do we evaluate the data
 
-This markdown show the result of expert A/B test evaluation among Psy-Insignt and other baseline dataset. Experts offered comparative assessments for similar cases in Psy-Insight, Esconv and Psy-Qa. Our evaluation team consists of 11 psychology students and two psychological counseling professionals.
+This document show the result of expert A/B test evaluation among Psy-Insignt and other baseline dataset. Experts offered comparative assessments for similar cases in Psy-Insight, Esconv and Psy-Qa. Our evaluation team consists of 11 psychology students and two psychological counseling professionals (Ps. After submission of paper, 6 more volunteers were invited to participate in the evaluation.). Their scores is avaiable at [Human Evaluation Score](./score.md). We also invited psychological students and expert therapist to leave their comments of the comparisons of Psy-Insight and baselines datasets. **These comments provide a insight into how mental health experts asses the quality of counseling **.They are available in following tables (half of cases and all comments are Chinese).
 
-## How to retrieve similar cases for comparison
+## How do we retrieve similar cases for A/B evaluation
 
 In case comparison, we ensured randomness and similarity by clustering cases's topics with sentence-Bert, selecting the top 5 detailed cases per major category, and assessing content/theme similarity with ChatGLM4-9b. We then chose 13 pairs of counseling dialog for comparative assessments.
 
