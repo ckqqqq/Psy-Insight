@@ -10,12 +10,12 @@ Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseli
 </div>
 <!-- https://anonymous.4open.science/r/Psy-Insight-F65E/docs/pic/ https://anonymous.4open.science/r/Psy-Insight-F65E/expert-eval/README.md-->
 <p align="center">
-  <a href="https://anonymous.4open.science/r/Psy-Insight-F65E"><b>[🌐 Website]</b></a> • 
-  <a href="https://anonymous.4open.science/r/Psy-Insight-F65E/expert-eval/README.md"><b>[🐦 Human Evaluation]</b></a> • 
-  <a href="https://anonymous.4open.science/w/Demo-A32D/Psy-Insight/"><b>[🌐 Video]</b></a> •
-  <a href="https://anonymous.4open.science/w/Anonymous-Demo-Page-CF8E/static/pdfs/psy-insight.pdf"><b>[📜 Paper]</b></a> •
-  <a href="https://anonymous.4open.science/r/Psy-Insight-F65E/data/README.md"><b>[🤗 Dataset]</b></a> •
-  <a href="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/data_source/data_source.md"><b>[⚠️ CopyRight]</b></a>
+  <a href="https://github.com/ckqqqq/Psy-Insight"><b>[🌐 Website]</b></a> • 
+  <a href="https://github.com/ckqqqq/Psy-Insight/expert-eval/README.md"><b>[🐦 Human Evaluation]</b></a> • 
+  <a href="https://github.com/ckqqqq/Psy-Insight/"><b>[🌐 Video]</b></a> •
+  <a href="https://arxiv.org/abs/2503.03607"><b>[📜 Paper]</b></a> •
+  <a href="https://github.com/ckqqqq/Psy-Insight/data/README.md"><b>[🤗 Dataset]</b></a> •
+  <a href="https://github.com/ckqqqq/Psy-Insight/docs/data_source/data_source.md"><b>[⚠️ CopyRight]</b></a>
   <br>
   <!-- <a href="https://twitter.com/TODO"><b>[🐦 Twitter]</b></a> • -->
   <!-- <a href="#-quick-start">Quick Start</a> • -->
@@ -29,7 +29,7 @@ Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseli
   
   
 <p align="center">
-Click Here for Detailed Introduction "<a href="https://anonymous.4open.science/w/Demo-A32D/Psy-Insight/" target="_blank">Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseling</a>"
+Click Here for Detailed Introduction "<a href="https://github.com/ckqqqq/Psy-Insight/" target="_blank">Psy-Insight: Explainable Multi-turn Bilingual Dataset for Mental Health Counseling</a>"
 </p>
 
 <p align="center">
@@ -43,7 +43,7 @@ Psy-Insight is a bilingual, interpretable multi-task dataset for psychological c
 ## 🔢 Construction Workflow
 
 <p align="center">
-    <img src="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/pic/github_demo.png" width="1000">
+    <img src="https://github.com/ckqqqq/Psy-Insight/docs/pic/github_demo.png" width="1000">
         <br>
     <em>Figure 1：Flow chart of the Psy-Insight construction pipeline.</em>
 </p>
@@ -53,7 +53,7 @@ Flow Chart of Psy-Insight Construction
 code2024/Psy-Insight/docs/images/overview/Data_Collection.png -->
 
 <p align="center">
-    <img src="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/images/overview/EMNLP_comp-916.png" width="1000">
+    <img src="https://github.com/ckqqqq/Psy-Insight/docs/images/overview/EMNLP_comp-916.png" width="1000">
         <br>
     <em>Figure 2: Comparison of construction pipeline between short-label annotations and chain-of-thought (COT) annotations.</em>
 </p>
@@ -324,7 +324,7 @@ A counseling cycle for a client consists of several sessions. In each session, t
 ### Dialogue
 
 <p align="center">
-    <img src="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/images/statistics/statistics.png" width="1000">
+    <img src="https://github.com/ckqqqq/Psy-Insight/docs/images/statistics/statistics.png" width="1000">
         <br>
     <em>Figure 4 Statistics of Chinese (left) and English (right) Counseling in Psy-Insight. In Psy-Insight, dialogues are organized in a hierarchical manner, starting from the broadest level (Case) down to the most specific (Turn). During the entire counseling process for a particular case, the therapist conducts a session centered around a specific topic. Each session includes dozens of dialogue turns. </em>
 </p>
@@ -334,7 +334,7 @@ A counseling cycle for a client consists of several sessions. In each session, t
 <!-- /home/ckqsudo/code2024/Psy-Insight/docs/images/statistics/Turn-level.png -->
 
 <p align="center">
-    <img src="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/images/statistics/Turn-level.png" width="1300">
+    <img src="https://github.com/ckqqqq/Psy-Insight/docs/images/statistics/Turn-level.png" width="1300">
         <br>
     <em>Figure 5 Statistics of turn-level labels. </em>
 </p>
@@ -342,7 +342,7 @@ A counseling cycle for a client consists of several sessions. In each session, t
 ### Session-Level Annotaions
 
 <p align="center">
-    <img src="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/images/statistics/session-level.png" width="700">
+    <img src="https://github.com/ckqqqq/Psy-Insight/docs/images/statistics/session-level.png" width="700">
         <br>
     <em>Figure 6: Distribution of Sessions by Psychotherapy Type </em>
 </p>
@@ -350,7 +350,7 @@ A counseling cycle for a client consists of several sessions. In each session, t
 <!-- code2024/Psy-Insight/docs/images/statistics/Topic.png -->
 
 <p align="center">
-    <img src="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/images/statistics/Topic.png" width="700">
+    <img src="https://github.com/ckqqqq/Psy-Insight/docs/images/statistics/Topic.png" width="700">
         <br>
     <em>Figure 7: Distribution of Sessions by Topic Type </em>
 </p>
@@ -361,7 +361,7 @@ A counseling cycle for a client consists of several sessions. In each session, t
 ### Automatic Evaluation
 
 <p align="center">
-    <img src="https://anonymous.4open.science/r/Psy-Insight-F65E/docs/images/statistics/exp.png" width="1000">
+    <img src="https://github.com/ckqqqq/Psy-Insight/docs/images/statistics/exp.png" width="1000">
         <br>
     <em>Figure 8: Result for finetuning LLMs with different combinations of annotations. The mix-instruction chatbot is trained by performing instruction-tuning on multiple tasks simultaneously. </em>
 </p>
@@ -369,13 +369,13 @@ A counseling cycle for a client consists of several sessions. In each session, t
 ### Human Psychotherapist Evaluation
 
 
-<a href="https://anonymous.4open.science/r/Psy-Insight-F65E/expert-eval/README.md"><b> [🌐 Human Expert Evaluation] </b></a> •
+<a href="https://github.com/ckqqqq/Psy-Insight/expert-eval/README.md"><b> [🌐 Human Expert Evaluation] </b></a> •
 
 
 <!--  -->
 ### Evaluation Code
 
-<a href="https://anonymous.4open.science/r/Psy-Insight-F65E/auto-eval/README.md"><b> [🌐 Code] </b></a> •
+<a href="https://github.com/ckqqqq/Psy-Insight/auto-eval/README.md"><b> [🌐 Code] </b></a> •
 
 ## ☕️ Citation
 
